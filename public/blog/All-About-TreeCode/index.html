@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my first post about a hobby project called TreeCode.">
+    <title>All About TreeCode</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74342154-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body>
+    <div class="panel">
+      <div class="panel-header">
+        <a class="brand" href="../../">
+          Simon Willshire
+          <span class="subtitle"></span>
+        </a>
+        
+       <div class="social">
+  <a href="https://github.com/Tiggilyboo"><span class="fa fa-github" alt="GitHub"></span></a>
+  <a href="http://bitbucket.com/Tiggilyboo"><span class="fa fa-bitbucket" alt="Bitbucket"></span></a>
+  <a href="http://stackoverflow.com/users/3969264/tiggilyboo"><span class="fa fa-stack-overflow"></a>
+  <a href="http://twitter.com/Tiggilyboo"><span class="fa fa-twitter" alt="Twitter"></span></a>
+  
+</div>
+
+
+        <div class="panel-list container">
+          <a href="../../">Home</a>
+          <a href="../../topics/blog">Blog</a>
+          <a href="../../topics/papers">Papers</a>
+          <a href="../../topics/music">Music</a>
+          <a href="../../contact">Contact</a>
+          <a href="../../about">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>All About TreeCode</h1>
+      <div class="meta">
+        Feb 27, 2016 &nbsp;
+        
+          <a href="../../tags/treecode">TreeCode</a>&nbsp;
+        
+          <a href="../../tags/code-editor">Code Editor</a>&nbsp;
+        
+          <a href="../../tags/go">Go</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<h3 id="what-is-treecode:b58b41a7f1372f2c486aa3a45fe4c51d">What is TreeCode?</h3>
+
+<p>It&rsquo;s a web-based code editor. What that&rsquo;s it? Well, the tree part comes in from tracking code file references.</p>
+
+<p>As of writing this post, the project is written using Go or Golang as a root language for hosting a local webserver and serving content. The type of content is nothing
+out of the ordinary, HTML5 &amp; CSS3, JS, JQuery front end interactions. Sitting on top of this, I&rsquo;ve selected some libraries to implement; The first of which is the <a href="https://github.com/ajaxorg/ace">Ace
+code editor</a> for a js code editor. The code editor has many common features such as syntax highlighting, intellisense-esque
+predictions and key bindings. I have some uncertainty about the choice of graphing library to render tree structures and leaf nodes representing code files, however this
+can be solidified once the underlying systems are written.</p>
+
+<h3 id="requirements:b58b41a7f1372f2c486aa3a45fe4c51d">Requirements</h3>
+
+<ul>
+<li>User can create a new project
+
+<ul>
+<li>User can create a new code file in the project</li>
+<li>User can save code file, program deciphers code extension in order to parse code references</li>
+</ul></li>
+<li>User can load a saved project
+
+<ul>
+<li>User can view the project in a tree structure with referenced parent/child relations</li>
+<li>User can load a saved code file in the project</li>
+</ul></li>
+</ul>
+
+<h3 id="some-ui-design:b58b41a7f1372f2c486aa3a45fe4c51d">Some UI Design</h3>
+
+<p><em>A mockup for the file selection UI.</em></p>
+
+<ul>
+<li>This view shows a simple list of files in a new project, each project can be viewed in a tree view based upon file references.</li>
+</ul>
+
+<p><img src="http://simonwillshire.com/images/TreeCode_FileSelect.jpg" alt="FileSelect" /></p>
+
+<p><em>A view of the ACE editor with syntax highlighting based on the filename extension.</em></p>
+
+<ul>
+<li>This view shows a single file being viewed, I plan to draw reference bars attached to the outside left and right of the editor. Once a bar is clicked, it will load the
+referenced file. Alternatively, the user may view the parent references which will drawn above the editor.</li>
+</ul>
+
+<p><img src="http://simonwillshire.com/images/TreeCode_Editor.jpg" alt="Editor" /></p>
+
+<h3 id="repository:b58b41a7f1372f2c486aa3a45fe4c51d">Repository</h3>
+
+<p>View or clone TreeCode source <a href="https://github.com/Tiggilyboo/TreeCode">here</a></p>
+
+
+      
+      
+    </article>
+    
+  </main>
+
+  <nav class="pagination-single">
+    
+      <span class="previous">&larr; <a href="http://simonwillshire.com/papers/Networking/" rel="prev">Networking</a></span>
+    
+    
+      <span class="next"><a href="http://simonwillshire.com/music/Two-Finger-Improv/" rel="next">Two Finger Improv</a> &rarr;</span>
+    
+  </nav>
+
+    </div> 
+
+    <footer class="footer">
+      <div class="container">
+        <span>Powered by <a href="https://gohugo.io/">Hugo</a></span>
+        
+        <div class="social">
+  <a href="https://github.com/Tiggilyboo"><span class="fa fa-github" alt="GitHub"></span></a>
+  <a href="http://bitbucket.com/Tiggilyboo"><span class="fa fa-bitbucket" alt="Bitbucket"></span></a>
+  <a href="http://stackoverflow.com/users/3969264/tiggilyboo"><span class="fa fa-stack-overflow"></a>
+  <a href="http://twitter.com/Tiggilyboo"><span class="fa fa-twitter" alt="Twitter"></span></a>
+  
+</div>
+
+
+      </div>
+    </footer>
+  </body>
+</html>
+

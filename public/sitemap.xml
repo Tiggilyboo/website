@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://simonwillshire.com/</loc>
+    <lastmod>2016-03-12T20:35:59-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/music/Something-About-Three-Fingers/</loc>
+    <lastmod>2016-03-12T20:35:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/music/Two-Finger-Improv/</loc>
+    <lastmod>2016-02-29T20:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/blog/All-About-TreeCode/</loc>
+    <lastmod>2016-02-27T18:15:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/papers/Networking/</loc>
+    <lastmod>2016-02-27T16:15:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/papers/Advanced-Algorithms/</loc>
+    <lastmod>2016-02-27T15:59:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/papers/Odroid-ARM-Cluster/</loc>
+    <lastmod>2016-02-27T15:47:17-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/papers/efficient-parallelism/</loc>
+    <lastmod>2016-02-27T15:37:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/papers/linear-genetic-programming/</loc>
+    <lastmod>2016-02-27T14:22:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/blog/test/</loc>
+    <lastmod>2016-02-23T17:01:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/about/</loc>
+    <lastmod>2016-02-21T22:10:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/contact/</loc>
+    <lastmod>2016-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

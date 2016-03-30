@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prng on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/prng/</link>
+    <description>Recent content in Prng on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Feb 2016 16:15:38 -0500</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/prng/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Networking</title>
+      <link>http://simonwillshire.com/papers/Networking/</link>
+      <pubDate>Sat, 27 Feb 2016 16:15:38 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/papers/Networking/</guid>
+      <description>
+
+&lt;h2 id=&#34;original-course-papers-2015:aeba6c55ea89045a88674fc937b3c38c&#34;&gt;Original Course Papers (2015)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/NET_A1.pdf&#34;&gt;Analog to Digital, Nyquist Theorem, Shannon&amp;rsquo;s Theorem, Latency data loss, Hamming Codes  (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/NET_A2.pdf&#34;&gt;MACA Protocol, Manchester Encoding, Multicast Spanning Tree, BGP, VANET, iMANET, IPv4 to IPv6 address conversion, Wireshark (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/NET_A3.pdf&#34;&gt;CDNs, Encryption: DES, Lotus Notes, Dual EC DRBG, HTTPS and SSL Decryption, Truecrypt, OTR, TOR, Zoho, PGP (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

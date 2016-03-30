@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etsp on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/etsp/</link>
+    <description>Recent content in Etsp on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Feb 2016 15:59:52 -0500</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/etsp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Advanced Algorithms</title>
+      <link>http://simonwillshire.com/papers/Advanced-Algorithms/</link>
+      <pubDate>Sat, 27 Feb 2016 15:59:52 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/papers/Advanced-Algorithms/</guid>
+      <description>
+
+&lt;h2 id=&#34;original-course-papers-2014:09a642b73079a09676298baf85c7951f&#34;&gt;Original Course Papers (2014)&lt;/h2&gt;
+
+&lt;p&gt;Here are a collection of papers I wrote for an advanced algorithms course (COIS-4050H) in 2014. Still remains to be the hardest course I&amp;rsquo;ve ever taken!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/AA_A2.pdf&#34;&gt;Selection / Median of Medians, Recursive Tiles, and Majority problems (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/AA_ETSP.pdf&#34;&gt;Euclidian Travelling Salesman problem (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

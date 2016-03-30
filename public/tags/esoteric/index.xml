@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Esoteric on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/esoteric/</link>
+    <description>Recent content in Esoteric on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Feb 2016 14:22:05 -0500</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/esoteric/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Linear Genetic Programming</title>
+      <link>http://simonwillshire.com/papers/linear-genetic-programming/</link>
+      <pubDate>Sat, 27 Feb 2016 14:22:05 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/papers/linear-genetic-programming/</guid>
+      <description>
+
+&lt;h2 id=&#34;original-course-paper-2014:7c84612a75001b3463f7e9fe3945c73a&#34;&gt;Original Course Paper (2014)&lt;/h2&gt;
+
+&lt;p&gt;This paper was written for an artificial intelligence course (COIS-4550H) in 2014. It examines a self-programming program using genetic algorithm techniques (with a
+fitness evaluation).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../files/AI_A4_LGP.pdf&#34;&gt;Linear Genetic Programming (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

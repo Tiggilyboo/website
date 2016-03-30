@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>{{ .Title }}</h1>
+      <div class="meta">
+        {{ .Date.Format "Jan 2, 2006" }} &nbsp;
+        {{ range .Params.tags }}
+          <a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+        {{ end }}
+      </div>
+    </div>
+    <article>
+      {{ .Content }}
+    </article>
+  </main>
+
+  <nav class="pagination-single">
+    {{ if .NextInSection }}
+      <span class="previous">&larr; <a href="{{ .NextInSection.Permalink }}" rel="prev">{{ .NextInSection.Title }}</a></span>
+    {{ end }}
+    {{ if .PrevInSection }}
+      <span class="next"><a href="{{ .PrevInSection.Permalink }}" rel="next">{{ .PrevInSection.Title }}</a> &rarr;</span>
+    {{ else }}
+      {{ if .NextInSection }}
+      {{ else }}
+      <span class="none">No related pages.</span>
+      {{ end }}
+    {{ end }}
+  </nav>
+
+{{ partial "footer.html" . }}

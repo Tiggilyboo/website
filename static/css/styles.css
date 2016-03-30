@@ -1,0 +1,173 @@
+body {
+  color: #777;
+  font-family: "Raleway", Helvetical, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+}
+a:active,
+a:hover {
+  color: #29abe2;
+  text-decoration: none;
+}
+a {
+  color: #777;
+  text-decoration: none;
+}
+.subtitle {
+  font-size: 17px;
+  color: #bbb;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+.banner {
+  border: 7px solid #;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 6px;
+  background-image:url('/public/images/banner.jpg');
+  background-position: center top;
+  background-size: cover;  
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+.panel {
+  padding: 15px 0;
+  min-height: 50px;
+  border-bottom: 1px solid #777;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.panel .panel-header {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.panel-list {
+  position: relative;
+}
+.panel a {
+  margin-right: 10px;
+}
+.brand {
+  font-size: 27px;
+  color: #222;
+  margin: 0.2em 0;
+}
+.container {
+  margin: 15px auto;
+  max-width: 1000px;
+}
+.footer {
+  border-top: 1px solid #777;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.pagination,
+.pagination-single {
+  overflow: auto;
+  border-top: 1px solid #29abe2;
+  padding-top: 15px;
+  margin-top: 55px;
+}
+.pagination .prev,
+.pagination-single .prev {
+  text-align: left;
+  float: left;
+  margin-left: 10px;
+}
+.pagination .next,
+.pagination-single .next {
+  text-align: right;
+  float: right;
+  margin-left: 10px;
+}
+article h1 {
+  margin: 50px 0 25px 0;
+}
+article h2 {
+  border-bottom: 2px solid #ddd;
+  margin: 50px 0 25px 0;
+  padding-bottom: 10px;
+}
+article h3,
+article h4,
+article h5,
+article h6 {
+  margin: 40px 0 25px 0;
+}
+article p {
+  margin: 25px 0;
+}
+article code {
+  color: #333;
+  background-color: #eee;
+  padding: 0 3px;
+  margin: 0 3px;
+  border: 1px solid #eee;
+  font-family: consolas, "Courier New", monospace;
+}
+article pre code {
+  font-family: consolas, "Courier New", monospace;
+}
+article blockquote {
+  margin: 25px 0;
+  padding-left: 20px;
+  border-left: 4px solid #ccc;
+  font-style: italic;
+}
+article img {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+.article-header {
+  border-left: 4px solid #29abe2;
+  margin: 10px 0 25px -4px;
+  padding: 5px 0 5px 10px;
+}
+.article-header h1 {
+  color: #3b8bba;
+}
+.summary {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.meta a,
+.meta a:active {
+  background-color: #e2e2e2;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.content-gallery-item {
+  margin-bottom: 40px;  
+  margin-top: 40px;
+  overflow: auto;
+}
+.content-gallery-item h4 {
+  margin-left: 40px;
+}
+.content-gallery-item img {
+  max-width: 480px;
+  float: left;
+}
+.content-gallery-item h2,
+.content-gallery-item h3,
+.content-gallery-item h4 {
+  font-size: 20px;
+}
+.social {
+  float: right;
+}
+.social a {
+  margin-right: 10px;
+}
+.social .fa {
+  margin-left: 16px;
+  font-size: 22px;
+}

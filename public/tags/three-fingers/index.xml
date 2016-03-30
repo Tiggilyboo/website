@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Three Fingers on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/three-fingers/</link>
+    <description>Recent content in Three Fingers on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Mar 2016 20:35:59 -0500</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/three-fingers/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Something About Three Fingers</title>
+      <link>http://simonwillshire.com/music/Something-About-Three-Fingers/</link>
+      <pubDate>Sat, 12 Mar 2016 20:35:59 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/Something-About-Three-Fingers/</guid>
+      <description>
+
+&lt;p&gt;Progress towards a song I&amp;rsquo;m still working on, it seems to change everytime&amp;hellip; Like the last video, my finger is out of comission, so 3 fingers is where its at!&lt;/p&gt;
+
+&lt;p&gt;This time standard tuning, and a simple equilizer to cut down ambient noise.&lt;/p&gt;
+
+&lt;h2 id=&#34;soundcloud:e080693818c0dc641c53e1da0b268280&#34;&gt;Soundcloud&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300px&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; 
+src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251589506&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;video:e080693818c0dc641c53e1da0b268280&#34;&gt;Video&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450px&#34; src=&#34;https://www.youtube.com/embed/F11ulYQjBVM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

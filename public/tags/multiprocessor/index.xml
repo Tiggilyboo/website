@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multiprocessor on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/multiprocessor/</link>
+    <description>Recent content in Multiprocessor on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Feb 2016 15:47:17 -0500</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/multiprocessor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ARM Beowolf Cluster</title>
+      <link>http://simonwillshire.com/papers/Odroid-ARM-Cluster/</link>
+      <pubDate>Sat, 27 Feb 2016 15:47:17 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/papers/Odroid-ARM-Cluster/</guid>
+      <description>
+
+&lt;h2 id=&#34;original-course-paper-2014:c46ac4fdbf68a53eba8d65cea4fdd9c8&#34;&gt;Original Course Paper (2014)&lt;/h2&gt;
+
+&lt;p&gt;This paper was writted for an operating systems course (COIS-3320H) in 2014. It analyses the ARM big.LITTLE architecture and scheduling algorithms. The paper documents
+the steps in order to create an Odroid beowolf cluster (Single board ARM computers) and set up messaging using MPICH3 and a central NFS storage.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/OS_ARM_Cluster.pdf&#34;&gt;ARM Beowolf Cluster (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Efficient Parallelism</title>
+      <link>http://simonwillshire.com/papers/efficient-parallelism/</link>
+      <pubDate>Sat, 27 Feb 2016 15:37:18 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/papers/efficient-parallelism/</guid>
+      <description>
+
+&lt;h2 id=&#34;original-course-paper-2015:6fb25818af042e5977668bb6cf3ef47d&#34;&gt;Original Course Paper (2015)&lt;/h2&gt;
+
+&lt;p&gt;This paper was written for a distributed computer course (COIS-4350H) in 2015. It analyses the Parallela architecture using ARM and it&amp;rsquo;s MIMD coprocessor (Epiphany).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/DC_Paper_Parallela.pdf&#34;&gt;Efficient Parallelism (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
