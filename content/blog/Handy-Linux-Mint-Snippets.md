@@ -10,6 +10,8 @@ tags = ["Linux", "Mint", "bash", "snippet"]
 
 1. Always display nautilus (file browser) path (Usually triggered with Ctrl-L)
 
-> `gsettings set org.gnome.nautilus.preferences always-use-location-entry true`
+~~~bash
+$ gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+~~~
 
 2. ...

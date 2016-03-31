@@ -7,10 +7,10 @@ tags = ["Scala", "Play", "PostgreSQL", "Slick"]
 topics = ["Blog", "Scala"]
 +++
 
-# Learning Scala Part 1 - play-scala-intro
+## Learning Scala Part 1 - play-scala-intro
 So, as of writing this, my background is primarily C#. This post is the first part of a series which will document my transition into all things Scala. I will be writing a step by step on creating a simple web stack.
 
-## My Setup
+### My Setup
 
 I'll be using Linux Mint 17.3, but most flavours of debian should work for any of my bash.
 
@@ -92,5 +92,5 @@ Select the 'scala-play-intro' template, and create it. This may take a bit of do
 
 ## Other Sources
 
-* Follow the handy JetBrains Play 2.X tutorial [here](https://www.jetbrains.com/help/idea/2016.1/getting-started-with-play-2-x.html?origin=old_help)
-* <span class="fa fa-github"></span> View or Clone the template [here](https://github.com/playframework/playframework/tree/master/templates/play-scala-intro)
+* [Follow the handy JetBrains Play 2.X tutorial](https://www.jetbrains.com/help/idea/2016.1/getting-started-with-play-2-x.html?origin=old_help)
+* [<span class="fa fa-github"></span> View or Clone the template](https://github.com/playframework/playframework/tree/master/templates/play-scala-intro)
