@@ -1,6 +1,7 @@
 +++
 draft = true
+title = ""
 description = ""
 tags = []
-topics = []
+topics = ["Papers"]
 +++
