@@ -4,6 +4,7 @@ title = "Handy Linux Bash Snippets"
 description = "Some bash snippets I can never remember, but are now written down somewhere..."
 topics= ["Blog"]
 tags = ["Linux", "bash", "snippet"]
+comments=true
 +++
 
 # Handy Linux Bash Snippets

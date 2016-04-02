@@ -4,6 +4,7 @@ title = "Two Finger Improv"
 description = "After a trip to New Zealand I had a finger out of commission, this has the capo and tuning to make up for that. For those of you interested, its Open-D with the 3rd and 4th strings swapped with a capo on the fifth fret."
 topics=["Music"]
 tags=["Acoustic","Guitar","Thwo Fingers","Original","Improvisation"]
+comments=true
 +++
 
 After a trip to New Zealand I had a finger out of commission, this has the capo and tuning to make up for that.

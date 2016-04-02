@@ -4,6 +4,7 @@ title = "Efficient Parallelism"
 description = "Analysis of a High Performance per Watt Multiprocessor MIMD Architecture"
 tags = ["Parallelism", "Research", "University", "MIMD", "Multiprocessor", "Parallela", "ARM"]
 topics = ["Papers"]
+comments=true
 +++
 
 ## Original Course Paper (2015)

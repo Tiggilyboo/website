@@ -4,6 +4,7 @@ title = "The site is live!"
 description = "This is the first blog post, what else would it be?"
 tags = []
 topics = ["Blog"]
+comments=true
 +++
 
 ## Welcome to the first blog post!

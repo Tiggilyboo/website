@@ -1,18 +1,41 @@
 {{ partial "header.html" . }}
 
-  <!-- Main Section Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" async>
+  (function(){
+    if(window.location.hostname == "localhost") return;
+
+    var disqus_shortname = '{{ .Site.DisqusShortname }}';
+    var dsqc = document.createElement('script'); dsqc.id = 'dsq-count-scr'; dsqc.type = 'text/javascript'; dsqc.async = true;
+    dsqc.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0]).appendChild(dsqc);
+  })();
+  </script>
+
   <main id="list" role="main">
     <div class="article-header light-gray"><h1>{{ .Title }}</h1></div>
     {{ range .Data.Pages }}
     <div class="summary">
-      <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }} - Draft{{end}}</a></h2>
+      <h2>
+        <a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }} - Draft{{end}}</a>
+      </h2>
       <div class="meta">
-        {{ .Date.Format "Jan 2, 2006" }} &nbsp;
+        <span class="date">
+          <i class="fa fa-clock"></i>
+          {{ .Date.Format "Jan 2, 2006" }}
+        </span>
+      {{ if .Params.comments }}
+        <span class="comment">
+          <i class="fa fa-comment"></i>
+          <a href="{{ .Permalink }}#disqus_thread"></a>
+        </span>
+      {{ end }}
+        &nbsp;
         <div class="meta-description">{{ .Description }}</div>
+        <div class="tags">
         {{ range .Params.tags }}
           <a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
         {{ end }}
+        </div>
       </div>
     </div>
     {{ end }}

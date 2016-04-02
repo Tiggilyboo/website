@@ -5,6 +5,7 @@ description = "My transition into using a Scala web stack using the Play! Framew
 draft = false
 tags = ["Scala", "Play", "PostgreSQL", "Slick"]
 topics = ["Blog", "Scala"]
+comments=true
 +++
 
 ## Learning Scala Part 1 - play-scala-intro

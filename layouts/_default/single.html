@@ -1,32 +1,57 @@
 {{ partial "header.html" . }}
 
+  {{ if .Params.extralang }}
+    {{ partial "code/languages.html" . }}
+  {{ end }}
+
   <main id="single" role="main">
     <div class="article-header">
       <h1>{{ .Title }}</h1>
       <div class="meta">
-        {{ .Date.Format "Jan 2, 2006" }} &nbsp;
+        <span class="date">
+          <i class="fa fa-clock"></i>
+          {{ .Date.Format "Jan 2, 2006" }}
+        </span>
+        &nbsp;
+        <div class="tags">
         {{ range .Params.tags }}
           <a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
         {{ end }}
+        </div>
       </div>
     </div>
     <article>
       {{ .Content }}
-    </article>
-  </main>
 
-  <nav class="pagination-single">
-    {{ if .NextInSection }}
-      <span class="previous">&larr; <a href="{{ .NextInSection.Permalink }}" rel="prev">{{ .NextInSection.Title }}</a></span>
-    {{ end }}
-    {{ if .PrevInSection }}
-      <span class="next"><a href="{{ .PrevInSection.Permalink }}" rel="next">{{ .PrevInSection.Title }}</a> &rarr;</span>
-    {{ else }}
-      {{ if .NextInSection }}
-      {{ else }}
-      <span class="none">No related pages.</span>
+      {{ with .Site.Params.shareThis }}
+        <div id="share-this" class="col span_10">
+          <span class='st_twitter_large' displayText='Tweet'></span>
+          <span class='st_facebook_large' displayText='Facebook'></span>
+          <span class='st_googleplus_large' displayText='Google +'></span>
+          <span class='st_pocket_large' displayText='Pocket'></span>
+          <span class='st_sharethis_large' displayText='ShareThis'></span>
+          <span class='st_email_large' displayText='Email'></span>
+        </div>
       {{ end }}
+    </article>
+
+    {{ if .Params.comments }}
+      {{ partial "disqus.html" . }}
     {{ end }}
-  </nav>
+
+    <nav class="pagination-single">
+      {{ if .NextInSection }}
+        <span class="previous">&larr; <a href="{{ .NextInSection.Permalink }}" rel="prev">{{ .NextInSection.Title }}</a></span>
+      {{ end }}
+      {{ if .PrevInSection }}
+        <span class="next"><a href="{{ .PrevInSection.Permalink }}" rel="next">{{ .PrevInSection.Title }}</a> &rarr;</span>
+      {{ else }}
+        {{ if .NextInSection }}
+        {{ else }}
+        <span class="none">No related pages.</span>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </main>
 
 {{ partial "footer.html" . }}

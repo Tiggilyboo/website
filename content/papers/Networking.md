@@ -4,6 +4,7 @@ title = "Networking"
 description = "A collection of papers written for a networking course. Decided to post these for some of the source code solutions, most of the content of the papers are direct solutions and are not much use..."
 tags = ["University", "Research", "Networking", "C Sharp", "Nyquist", "Shannons", "Hamming", "MACA", "Manchester", "Encoding", "Multicast", "Spanning", "BGP", "ISP", "VANET", "iMANET", "IPv4", "IPv6", "C", "Wireshark", "HTTP", "Cryptography", "CDN", "DES", "PRNG", "TrueCrypt", "BitLocker", "OTR", "TOR", "Zoho", "PGP"]
 topics = ["Papers"]
+comments=true
 +++
 
 ## Original Course Papers (2015)
