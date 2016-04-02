@@ -16,9 +16,10 @@ This guide assumes that all nodes are,
 
 ### TL;DR; Just give me the tar's!
 
-* Go 1.4.3 Linux ARMv7 (Bootstrap to build 1.5.2) [tar.gz](http://simonwillshire.com/files/ARMv7/go1.4.3.linux-armv7.tar.gz)
-* Go 1.5.2 Linux ARMv7 (Used to build Docker Swarm) [tar.gz](http://simonwillshire.com/files/ARMv7/go1.5.2.linux-armv7.tar.gz)
-* Docker Swarm 1.2 Linux ARMv7 [tar.gz](http://simonwillshire.com/files/ARMv7/swarm1.2.linux-armv7.tar.gz)
+* Docker Machine 0.4.1 Linux ARMv7 [tar.gz](https://bitbucket.org/tiggilyboo/website/downloads/docker-machine.0.4.1.tar.gz)
+* Go 1.4.3 Linux ARMv7 (Bootstrap to build 1.5.2) [tar.gz](https://bitbucket.org/tiggilyboo/website/downloads/go1.4.3.linux-armv7.tar.gz)
+* Go 1.5.2 Linux ARMv7 (Used to build Docker Swarm) [tar.gz](https://bitbucket.org/tiggilyboo/website/downloads/go1.5.2.linux-armv7.tar.gz)
+* Docker Swarm 1.2 Linux ARMv7 [tar.gz](https://bitbucket.org/tiggilyboo/website/downloads/swarm1.2.linux-armv7.tar.gz)
 
 ### Guide
 
