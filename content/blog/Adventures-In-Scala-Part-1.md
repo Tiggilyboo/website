@@ -16,7 +16,7 @@ So, as of writing this, my background is primarily C#. This post is the first pa
 I'll be using Linux Mint 17.3, but most flavours of debian should work for any of my bash.
 
 * PostgreSQL 9.3.11
-* IntelliJ IDEA, Open JDK 1.7.0_95
+* IntelliJ IDEA, targeting Open JDK 1.8_72
 * Scala 2.11 with SBT, SSP, HOCON
 * Play! 2.5.1 Framework (Using IntelliJ's plugin)
 * Slick
@@ -25,12 +25,14 @@ I'll be using Linux Mint 17.3, but most flavours of debian should work for any o
 
 ~~~bash
 $ apt-get update
-$ apt-get install postgresql postgresql-contrib openjdk-7-jdk
+$ apt-get install postgresql postgresql-contrib openjdk-8-jdk
 $ wget https://www.jetbrains.com/idea/download/download-thanks.html?platform=linux
 $ sudo tar -xvzf ideaIU-2016.1.1.tar.gz -C /usr/share/intellij/
 $ cd /usr/share/intellij
 $ sudo bash ./idea.sh
 ~~~
+
+**Note:** *If you're missing the openjdk-8-jdk package, add it to your repo list with `add-apt-repository ppa:openjdk-r/ppa`*
 
 ### Set up our PostgreSQL DB
 
@@ -84,12 +86,23 @@ postgres=# exit
 *Grab a sample play framework project template to load into IntelliJ*
 
 ~~~bash
-$ wget https://www.lightbend.com/activator/template/bundle/play-scala-intro
-$ unzip play-scala-intro.zip -d $HOME
-$ sudo ./$HOME/bin/activator ui
+$ wget https://www.lightbend.com/activator/template/bundle/play-scala-intro.zip
+$ unzip play-scala-intro -d ~/play/
+$ sudo ./$HOME/play/play-scala-intro/bin/activator ui
 ~~~
 
 Select the 'scala-play-intro' template, and create it. This may take a bit of downloading Open the project in IntelliJ...
+
+#### Potential Issues
+
+* If you get a `java.io.FileNotFoundException: (Permission denied)`, you may want to `sudo chown <user>:<user> -R ~/scala-play-intro`
+* If you get a `java.lang.UnsupportedClassVersionError: ... Unsupported major.minor version 52.0` or similar, ensure you are targeting the project to Java 1.8 through the IDE's project settings with (File -> Project Structure). Also, you may want to make sure you set the java alternatives using:
+
+~~~bash
+$ sudo update-alternatives --config java
+$ sudo update-alternatives --config javac
+$ java -version
+~~~
 
 ## Other Sources
 
