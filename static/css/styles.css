@@ -190,8 +190,45 @@ article img {
   font-size: 22px;
 }
 code.hljs {
-  overflow: hidden;
+  overflow-x: auto;
   border-radius: 3px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+}
+@media (max-width : 480px){
+  .brand {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .social {
+    float: none;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .social .fa {
+    margin-left: auto;
+  }
+  .panel a {
+    margin: auto 5%;
+  }
+  .panel-list {
+    text-align:center;
+  }
+  .panel-list a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .content-gallery-item h2,
+  .content-gallery-item h3,
+  .content-gallery-item h4 {
+    display: inline-block;
+  }
+  .footer {
+    text-align: center;
+  }
+  code.hljs {
+    overflow: auto;
+  }
 }
