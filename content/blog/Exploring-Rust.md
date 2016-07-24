@@ -1,8 +1,7 @@
 +++
 date = "2016-05-14T13:06:00-04:00"
-title = "Exploring Rust"
+title = "Exploring Rust - Part 1"
 description = "Started taking a look at what all the hype was about with Rust!"
-draft = true
 tags = ["Programming", "Rust", "Compiler"]
 topics = ["Blog", "Programming"]
 comments=true
