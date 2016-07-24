@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mint on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/mint/</link>
+    <description>Recent content in Mint on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 31 Mar 2016 11:35:00 -0500</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/mint/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Handy Linux Mint Snippets</title>
+      <link>http://simonwillshire.com/blog/Handy-Linux-Mint-Snippets/</link>
+      <pubDate>Thu, 31 Mar 2016 11:35:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/blog/Handy-Linux-Mint-Snippets/</guid>
+      <description>
+
+&lt;h1 id=&#34;handy-linux-mint-snippets:e1da0003961bb4725fd5765cbc7c1574&#34;&gt;Handy Linux Mint Snippets&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Always display nautilus (file browser) path (Usually triggered with Ctrl-L)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

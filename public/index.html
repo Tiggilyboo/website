@@ -4,13 +4,32 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+
     <title>Simon Willshire</title>
-    
+
+    <meta name="application-name" content="Simon Willshire"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="http://simonwillshire.com/icons/mstile-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://simonwillshire.com/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://simonwillshire.com/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://simonwillshire.com/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://simonwillshire.com/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://simonwillshire.com/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://simonwillshire.com/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="http://simonwillshire.com/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://simonwillshire.com/icons/favicon-16x16.png" sizes="16x16" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="http://simonwillshire.com/css/styles.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/zenburn.min.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
 
     <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -26,9 +45,8 @@
       <div class="panel-header">
         <a class="brand" href="./">
           Simon Willshire
-          <span class="subtitle"></span>
         </a>
-        
+
        <div class="social">
   <a href="https://github.com/Tiggilyboo"><span class="fa fa-github" alt="GitHub"></span></a>
   <a href="http://bitbucket.com/Tiggilyboo"><span class="fa fa-bitbucket" alt="Bitbucket"></span></a>
@@ -56,11 +74,19 @@
     <h2>Experience</h2>
     <div class="content-gallery">
       <div class="content-gallery-item">
+        <div><img src="images/pathfive.jpg" width="200px" style="float: right;"/></div>
+        <span>2016-Current</span>
+        <h4><a href="https://pathfive.ca/">Full Stack Developer at Pathfive</a></h4>
+        <ul>
+          <li>Using Stack: Scala, Play! Framework, PostgreSql, HTML, JS</li>
+        </ul>
+      </div>
+      <div class="content-gallery-item">
         <div><img src="images/qline.jpg" width="200px" style="float: right;"/></div>
         <span>2011-2016</span>
         <h4><a href="http://www.qlinesolutions.com/">Software Developer at QLine Solutions Inc.</a></h4>
         <ul>
-          <li>Using Stack: 3-tier architecture & MVC using C#, ASP.NET, HTML5, JS, Microsoft SQL</li>
+          <li>Using Stack: 3-tier architecture & MVC using C#, ASP.NET, HTML, JS, Microsoft SQL</li>
           <li>Converted 400k line legacy VB6 application to .NET</li>
           <li>Provided performance/bug fixes for legacy VB6 application</li>
         </ul>
@@ -103,7 +129,7 @@
         <div><img src="https://lh3.googleusercontent.com/zQ6a7DVf97_f90dcLm5BbNw0eZ7-kx05SPf_a2Bjop83LYMnEKFvjhncyLd7UhqO-A=w300-rw"/></div>
         <h3><a href="https://play.google.com/store/apps/details?id=com.cannymoose.wikinder">Wikinder</a></h3>
         <p>
-Wikinder is a fun way to connect with new and interesting Wikipedia articles. Swipe right to Like or left to Pass on the articles Wikinder 
+Wikinder is a fun way to connect with new and interesting Wikipedia articles. Swipe right to Like or left to Pass on the articles Wikinder
 recommends. Let
 Wikinder help you explore the free encyclopedia containing more than 32 million articles in 280 languages--making it the most comprehensive and widely used reference
 work humans have ever compiled.
@@ -116,7 +142,7 @@ alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/image
       </div>
 
       <div class="content-gallery-item">
-        <h3><a href="https://github.com/Tiggilyboo/UnityQuadTreePlanet">        
+        <h3><a href="https://github.com/Tiggilyboo/UnityQuadTreePlanet">
           <span class="fa fa-github"></span>
           Unity 3D QuadTree Planet Generator</a>
         </h3>
@@ -158,8 +184,8 @@ much more content written in the repo</p>
 
     <footer class="footer">
       <div class="container">
-        <span>Powered by <a href="https://gohugo.io/">Hugo</a></span>
-        
+        <span>Powered by <a href="https://gohugo.io/">Hugo 0.15</a></span>
+
         <div class="social">
   <a href="https://github.com/Tiggilyboo"><span class="fa fa-github" alt="GitHub"></span></a>
   <a href="http://bitbucket.com/Tiggilyboo"><span class="fa fa-bitbucket" alt="Bitbucket"></span></a>

@@ -9,7 +9,7 @@ comments=false
 
 ## Hello there!
 
-If you haven't guessed by the site name, my name is Simon Willshire. I recently received my undergraduate degree in Computer Sciences specializing in software
+If you haven't guessed by the site name, my name is Simon Willshire. I recently finished my undergraduate degree in Computer Sciences specializing in software
 engineering. I've worked for a few small software companies; creating and designing new solutions,
 converting large legacy applications, as well as maintaining existing ones. This site will hope to track my technological
 discoveries and thoughts along the way. This site also keeps track of [papers](http://simonwillshire.com/papers) that I've written during my degree, as well as any research that I've

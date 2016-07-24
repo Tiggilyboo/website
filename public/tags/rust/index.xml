@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on Simon Willshire</title>
+    <link>http://simonwillshire.com/tags/rust/</link>
+    <description>Recent content in Rust on Simon Willshire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 May 2016 13:06:00 -0400</lastBuildDate>
+    <atom:link href="http://simonwillshire.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Exploring Rust</title>
+      <link>http://simonwillshire.com/blog/Exploring-Rust/</link>
+      <pubDate>Sat, 14 May 2016 13:06:00 -0400</pubDate>
+      
+      <guid>http://simonwillshire.com/blog/Exploring-Rust/</guid>
+      <description>
+
+&lt;h2 id=&#34;exploring-rust:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Exploring Rust&lt;/h2&gt;
+
+&lt;p&gt;Everyone seems to be talking about Rust lately, so I&amp;rsquo;d thought I&amp;rsquo;d give it a shot and write something in it. The exploration begins with setting up the rust compiler, and setting up atom with various rust packages (linter, racer, and syntax highlighting).&lt;/p&gt;
+
+&lt;h3 id=&#34;environment-setup:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Environment Setup&lt;/h3&gt;
+
+&lt;h4 id=&#34;installing-the-rust-compiler-rustc:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Installing the Rust Compiler (rustc)&lt;/h4&gt;
+
+&lt;p&gt;Fetch the latest stable rust binaries (As of writing this 1.8.0):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ curl -sSf https://static.rust-lang.org/rustup.sh | sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Depending on what system you&amp;rsquo;re running under, in most cases you will also get a package manager for rust called Cargo. I will be using it to install a package called &lt;a href=&#34;https://github.com/phildawes/racer&#34;&gt;racer&lt;/a&gt; for auto completion in &lt;a href=&#34;https://atom.io/&#34;&gt;atom&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;installing-racer:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Installing Racer&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cargo install racer
+$ export PATH=$PATH:/home/$USER/.cargo/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;atom-packages:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Atom Packages&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/language-rust&#34;&gt;language-rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-rust&#34;&gt;linter-rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/racer&#34;&gt;racer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Configuration:&lt;/strong&gt;
+Racer required &lt;code&gt;RUST_SRC_PATH&lt;/code&gt; to be set to the location of your rust source, which can be downloaded and set like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/rust-lang/rust.git
+export RUST_SRC_PATH=/home/$USER/rust
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ok, so I&amp;rsquo;ve opened a new .rs file and now its throwing errors at me! - Make sure you&amp;rsquo;ve set the correct paths in Atom&amp;rsquo;s racer package, so just &lt;code&gt;Ctrl+,&lt;/code&gt;, open the racer package, and set the paths. Mine are the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/c6VnjVi.jpg&#34; alt=&#34;Rust Racer Package Configuration&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And to test it out in your new rust source file, try out &lt;code&gt;std::&lt;/code&gt; you should get some auto complete!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/tm2eeXU.jpg&#34; alt=&#34;Rust in Atom using Racer&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;writing-rust:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Writing Rust&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re used to higher level languages, rust might be slightly daunting - Then again it&amp;rsquo;s probably not as bad as learning C/C++ the first time&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;You can sometimes get helpful information using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rustc --explain EXXXX
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternatively, the official &lt;a href=&#34;https://doc.rust-lang.org/error-index.html&#34;&gt;webified version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy rusting! More coming soon?&lt;/p&gt;
+
+&lt;h3 id=&#34;further-reading:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Further Reading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.rust-lang.org/book/getting-started.html&#34;&gt;Official Rust Documentation: Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Rust_(programming_language&#34;&gt;Rust Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

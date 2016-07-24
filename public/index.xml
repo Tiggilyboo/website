@@ -6,9 +6,633 @@
     <description>Recent content on Simon Willshire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 12 Mar 2016 20:35:59 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jun 2016 15:25:00 -0500</lastBuildDate>
     <atom:link href="http://simonwillshire.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello Fidelity</title>
+      <link>http://simonwillshire.com/music/Hello-Fidelity/</link>
+      <pubDate>Sun, 19 Jun 2016 15:25:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/Hello-Fidelity/</guid>
+      <description>
+
+&lt;p&gt;Finally recorded something with the new recording equipment, here&amp;rsquo;s a little
+something I put together. Tuning as follows (Fret number to next open string): 3, 4,
+12, 5, 3&lt;/p&gt;
+
+&lt;h2 id=&#34;soundcloud:139f304a9b0f7da94f2db893ad54385a&#34;&gt;Soundcloud&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269914672&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;video:139f304a9b0f7da94f2db893ad54385a&#34;&gt;Video&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://www.youtube.com/embed/5KEWP-1UZ8M&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upcoming Audio Improvements</title>
+      <link>http://simonwillshire.com/music/Upcoming-Audio-Improvements/</link>
+      <pubDate>Sun, 29 May 2016 21:51:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/Upcoming-Audio-Improvements/</guid>
+      <description>
+
+&lt;h2 id=&#34;my-music-setup:c368cc58dd1f380f08327a3c63238358&#34;&gt;My Music Setup&lt;/h2&gt;
+
+&lt;p&gt;Hey internet, I&amp;rsquo;ve decided to write a post looking at some upcoming
+equipment I&amp;rsquo;ve purchased to finally get a decent sound for some of my
+acoustic guitar recordings (Currently horrible quality through my phone,
+so really anything else is an improvement). I&amp;rsquo;m writing this with a
+budget of 6-7 hundred CAD for everything from pickups to audio interface
+and software so here&amp;rsquo;s what I&amp;rsquo;ve put together so far!&lt;/p&gt;
+
+&lt;h3 id=&#34;a-typical-setup:c368cc58dd1f380f08327a3c63238358&#34;&gt;A Typical Setup&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/EQpTen8.jpg&#34; alt=&#34;Rig Overview&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nothing too fancy here, just an overview from guitar to PC for
+recording. I&amp;rsquo;ll go through each of these segments individually in this
+post to give you an idea as to what each does.&lt;/p&gt;
+
+&lt;h4 id=&#34;source:c368cc58dd1f380f08327a3c63238358&#34;&gt;Source&lt;/h4&gt;
+
+&lt;p&gt;Well, if you&amp;rsquo;re going to be recording something, you probably should
+make some noise, so I&amp;rsquo;ve got one of these:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/Owt3RBO.jpg&#34; alt=&#34;Source&#34; /&gt;
+Tanglewood Sundance Pro TW73&lt;/p&gt;
+
+&lt;p&gt;Now, there are several types of pickups at your disposal; you may have
+one already installed with a preamp, or you may need to install one
+yourself. Based on the kind of things I&amp;rsquo;d like to play and listen to
+(Andy cKee, Antoine Dufour, Mike Dawes, Pierre Bensusan, Michael
+Hedges), namely percussive fingerstyle. In general you want to be able
+to balance various aspects of your sound: You want to control how much
+volume a hit to the body of the guitar (so you don&amp;rsquo;t sound like you&amp;rsquo;re
+just smacking the crap out of it with a few quiet notes thrown in
+between). So with this in mind, you will want to have multiple pickups
+and therefore multiple channels running simultaneously. This is a lot
+like recording a voice mic, and an instrument together, or in extreme
+cases 8 mics for drum kits.&lt;/p&gt;
+
+&lt;p&gt;** Pickups and Mics **&lt;/p&gt;
+
+&lt;p&gt;In order to pickup percussive hits like palm or finger slaps on the body
+of the guitar, you&amp;rsquo;ll want an internal condenser microphone installed
+near the guitar&amp;rsquo;s soundhole.&lt;/p&gt;
+
+&lt;p&gt;In order to pickup harmonics and reduced finger noise (focused on string
+vibration only) you&amp;rsquo;ll probably want to get a magnetic pickup.&lt;/p&gt;
+
+&lt;p&gt;In order to keep the sound natural and acoustic sounding while still
+leveling off finger noise and pickup internal resonance you may want to
+get a transducer pickup.&lt;/p&gt;
+
+&lt;p&gt;Putting all of this together, you&amp;rsquo;re looking at 2 or 3 inputs out of one
+guitar&amp;hellip; Looking at what some of my favourite artists use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;** Transducer / Condenser Mic Combo: ** K &amp;amp; K Trinity Pro system, used
+by Andy McKee, Callum Graham&amp;hellip;
+
+&lt;ul&gt;
+&lt;li&gt;Roughly $280 CAD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kksound.com/products/images/trinity/kktrinitypromini.jpg&#34; alt=&#34;K &amp;amp; K Trinity Pro 
+System&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;** Passive Magnetic Soundhole Pickup: ** DiMarzio Black Angel DP234,
+used by Mike Dawes, Antoine Dufour, Jimmy Wahlsteen &amp;hellip;
+
+&lt;ul&gt;
+&lt;li&gt;Roughly $240 CAD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.dimarzio.com/sites/default/files/imagecache/product_pickup/The-Black-Angel_DP234.jpg&#34; alt=&#34;Dimarzio Black Angel 
+DP234&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: This pickup requires a minimum diameter soundhole of 86mm (3.5&amp;rdquo;)
+to be of any use.&lt;/p&gt;
+
+&lt;p&gt;Right, so now that you&amp;rsquo;ve got an idea of the pickups, we probably want
+to run these through a preamp in order to balance each channels gain,
+volume, and colour. This is not an absolute requirement, but it gives us
+more control before we chuck it into the audio interface.&lt;/p&gt;
+
+&lt;h4 id=&#34;preamps:c368cc58dd1f380f08327a3c63238358&#34;&gt;Preamps&lt;/h4&gt;
+
+&lt;p&gt;There are soooo many options to go through here, and as I have not yet
+had the chance to experiment too much with these, I&amp;rsquo;ll just leave it to
+common sense by following what requirements: Unless you want to spend a
+boatload of money, you probably want to get either two cheap mono
+channel preamps, or a single multichannel if you can find them at a
+reasonable cost. Here are some possibilities:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;This thing is absolutely beautiful, however budget does not allow for
+this sort of fancy, but hey The Headway EDB-2 has got to be one of the
+best options on the market.
+
+&lt;ul&gt;
+&lt;li&gt;Roughly $500 CAD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.headwaymusicaudio.com/wpcms/wp-content/uploads/2013/07/EDB-2-5.3.13_0013R-640x471.jpg&#34; alt=&#34;Headway 
+EDB-2&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Another option, also quite pricey, dual channel mixer and equalizer,
+the K &amp;amp; K Quantum Blender:
+
+&lt;ul&gt;
+&lt;li&gt;Roughly $470 CAD
+&lt;img src=&#34;http://kksound.com/products/images/quantum/kkquantumblender-4.jpg&#34; alt=&#34;K &amp;amp; K Quantum 
+Blender&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;effects-eq-pedals:c368cc58dd1f380f08327a3c63238358&#34;&gt;Effects / EQ Pedals&lt;/h4&gt;
+
+&lt;p&gt;Alright, now that you&amp;rsquo;ve got everything balanced, you may want to
+flavour it up a bit with some effects, if you&amp;rsquo;ve got some old pedals
+floating around, or a combination pedal, or a wah/volume control pedal,
+nothing very fancy here, just an option.&lt;/p&gt;
+
+&lt;h4 id=&#34;audio-interface:c368cc58dd1f380f08327a3c63238358&#34;&gt;Audio Interface&lt;/h4&gt;
+
+&lt;p&gt;This is fundamentally the key component here, its taking all of your
+fancy signals and throwing them at your PC to be recorded and then
+processed and tweaked to your liking&amp;hellip; So, we&amp;rsquo;re looking at like 8
+grand for this thing right? Nah, actually these are readily available at
+decent costs, however it seems every channel that you add cranks the
+price up significantly. Thankfully, if you were able to mix your sound
+into 1 or 2 channels it is not too bad:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;PreSonus AudioBox USB - Dual channel, Phantom power, headphones,
+MIDI&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www-media-presonus.netdna-ssl.com/uploads/products/media/images/AudioBox_USB-02.png&#34; alt=&#34;PreSonus AudioBox 
+USB&#34; /&gt;
+  * Roughly $120 CAD&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;USB Dual Pre Project Series - Dual channel preamp
+
+&lt;ul&gt;
+&lt;li&gt;Roughly $100 CAD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Well that&amp;rsquo;s all we have time for today folks, happy jamming!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Flamencish</title>
+      <link>http://simonwillshire.com/music/Flamencish/</link>
+      <pubDate>Mon, 23 May 2016 15:20:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/Flamencish/</guid>
+      <description>
+
+&lt;p&gt;Some flamencish sort of improvisation - The usual process of finding a
+tuning, and experiment with patterns that go well together.
+Tuning from low to high, fret numbers indicate same note on next string:
+7, 2, 7, 10, 4&lt;/p&gt;
+
+&lt;h2 id=&#34;soundcloud:d0bbb440cff85b111871e3a276eb07c3&#34;&gt;Soundcloud&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265545289&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;video:d0bbb440cff85b111871e3a276eb07c3&#34;&gt;Video&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://www.youtube.com/embed/Qq6HNzCxPy4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring Rust</title>
+      <link>http://simonwillshire.com/blog/Exploring-Rust/</link>
+      <pubDate>Sat, 14 May 2016 13:06:00 -0400</pubDate>
+      
+      <guid>http://simonwillshire.com/blog/Exploring-Rust/</guid>
+      <description>
+
+&lt;h2 id=&#34;exploring-rust:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Exploring Rust&lt;/h2&gt;
+
+&lt;p&gt;Everyone seems to be talking about Rust lately, so I&amp;rsquo;d thought I&amp;rsquo;d give it a shot and write something in it. The exploration begins with setting up the rust compiler, and setting up atom with various rust packages (linter, racer, and syntax highlighting).&lt;/p&gt;
+
+&lt;h3 id=&#34;environment-setup:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Environment Setup&lt;/h3&gt;
+
+&lt;h4 id=&#34;installing-the-rust-compiler-rustc:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Installing the Rust Compiler (rustc)&lt;/h4&gt;
+
+&lt;p&gt;Fetch the latest stable rust binaries (As of writing this 1.8.0):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ curl -sSf https://static.rust-lang.org/rustup.sh | sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Depending on what system you&amp;rsquo;re running under, in most cases you will also get a package manager for rust called Cargo. I will be using it to install a package called &lt;a href=&#34;https://github.com/phildawes/racer&#34;&gt;racer&lt;/a&gt; for auto completion in &lt;a href=&#34;https://atom.io/&#34;&gt;atom&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;installing-racer:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Installing Racer&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cargo install racer
+$ export PATH=$PATH:/home/$USER/.cargo/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;atom-packages:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Atom Packages&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/language-rust&#34;&gt;language-rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/linter-rust&#34;&gt;linter-rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/packages/racer&#34;&gt;racer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Package Configuration:&lt;/strong&gt;
+Racer required &lt;code&gt;RUST_SRC_PATH&lt;/code&gt; to be set to the location of your rust source, which can be downloaded and set like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/rust-lang/rust.git
+export RUST_SRC_PATH=/home/$USER/rust
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ok, so I&amp;rsquo;ve opened a new .rs file and now its throwing errors at me! - Make sure you&amp;rsquo;ve set the correct paths in Atom&amp;rsquo;s racer package, so just &lt;code&gt;Ctrl+,&lt;/code&gt;, open the racer package, and set the paths. Mine are the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/c6VnjVi.jpg&#34; alt=&#34;Rust Racer Package Configuration&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And to test it out in your new rust source file, try out &lt;code&gt;std::&lt;/code&gt; you should get some auto complete!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/tm2eeXU.jpg&#34; alt=&#34;Rust in Atom using Racer&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;writing-rust:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Writing Rust&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re used to higher level languages, rust might be slightly daunting - Then again it&amp;rsquo;s probably not as bad as learning C/C++ the first time&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;You can sometimes get helpful information using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rustc --explain EXXXX
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternatively, the official &lt;a href=&#34;https://doc.rust-lang.org/error-index.html&#34;&gt;webified version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy rusting! More coming soon?&lt;/p&gt;
+
+&lt;h3 id=&#34;further-reading:6375cca0e4aea08df2ae2312f5acaa95&#34;&gt;Further Reading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.rust-lang.org/book/getting-started.html&#34;&gt;Official Rust Documentation: Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Rust_(programming_language&#34;&gt;Rust Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Harmonic for Twelfth</title>
+      <link>http://simonwillshire.com/music/A-Harmonic-for-Twelfth/</link>
+      <pubDate>Sat, 07 May 2016 17:40:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/A-Harmonic-for-Twelfth/</guid>
+      <description>
+
+&lt;p&gt;A somewhat improvised song, mostly smacking the 12th fret harmonics. Tuning is as follows
+(Fret number to next string open):&lt;/p&gt;
+
+&lt;p&gt;7, 3, 7, 4, 3 (Basically drop D tuning with high string also D?)&lt;/p&gt;
+
+&lt;h2 id=&#34;soundcloud:0e2617e33834cd62af991dcf6d0cec8c&#34;&gt;Soundcloud&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262988533&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;video:0e2617e33834cd62af991dcf6d0cec8c&#34;&gt;Video&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://www.youtube.com/embed/B5xleIqH__E&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improvisation: A Tune in Another Tune</title>
+      <link>http://simonwillshire.com/music/A-Tune-in-Another-Tune/</link>
+      <pubDate>Tue, 26 Apr 2016 20:00:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/A-Tune-in-Another-Tune/</guid>
+      <description>
+
+&lt;p&gt;Some improvisation on an odd tuning. Still without the use of my ring finger&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Tuning as follows (By fret number above open string):
+5, 7, 7, 5, 4&lt;/p&gt;
+
+&lt;h2 id=&#34;soundcloud:4e4b949ee70e7aa6ceda02f2bc33f2af&#34;&gt;Soundcloud&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/260286500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;video:4e4b949ee70e7aa6ceda02f2bc33f2af&#34;&gt;Video&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;500&#34; src=&#34;https://www.youtube.com/embed/YLf_11aA0VQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interrupted by a Motorcycle</title>
+      <link>http://simonwillshire.com/music/Interrupted-By-A-Motorcycle/</link>
+      <pubDate>Thu, 14 Apr 2016 19:24:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/music/Interrupted-By-A-Motorcycle/</guid>
+      <description>
+
+&lt;p&gt;Interrupted by a motorcycle a minute and a half in, but here&amp;rsquo;s an odd tuning I&amp;rsquo;ve
+been playing on for a while!&lt;/p&gt;
+
+&lt;p&gt;Tuning Frets (Open to adjacent below): 5, 7, 5, 4, 3&lt;/p&gt;
+
+&lt;h2 id=&#34;soundcloud:ab40ebb97d805521ef22a77fb64e5fbf&#34;&gt;Soundcloud&lt;/h2&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;166&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; 
+src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258545172&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;No video this time, sorry folks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker Swarm on ARM</title>
+      <link>http://simonwillshire.com/blog/Docker-Swarm-ARM-Cluster/</link>
+      <pubDate>Fri, 01 Apr 2016 18:16:00 -0500</pubDate>
+      
+      <guid>http://simonwillshire.com/blog/Docker-Swarm-ARM-Cluster/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/docker/swarm&#34;&gt;
+  &lt;img src=&#34;https://github.com/docker/swarm/blob/master/logo.png?raw=true&#34; alt=&#34;Docker Swarm&#34; style=&#34;max-width:100%;&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;overview:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;So, a couple years ago when I was studying my bachelors, I did a project for an operating systems course on the ARM big little architecture and scheduling algorithms (You can even read my final paper &lt;a href=&#34;http://simonwillshire.com/files/OS_ARM_Cluster.pdf&#34;&gt;here&lt;/a&gt;). Fast forward a couple years, and I&amp;rsquo;ve still got some ARM boards floating around - After doing some reading into Docker Swarm, I thought I&amp;rsquo;d try it out without virtualizing everything on my main box. This guide documents more or less my steps to create a working swarm&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;First off, this guide assumes that all nodes are,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Networked, and have been identified by hostnames, and have SSH keys set up: recommend using a fairly fast but cheap backbone, like GB ethernet.&lt;/li&gt;
+&lt;li&gt;ARM arch of course&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tl-dr-just-give-me-the-tar-s:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;TL;DR; Just give me the tar&amp;rsquo;s!&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Machine 0.4.1 Linux ARMv7 &lt;strong&gt;&lt;a href=&#34;https://bitbucket.org/tiggilyboo/website/downloads/docker-machine.0.4.1.tar.gz&#34;&gt;tar.gz&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Go 1.4.3 Linux ARMv7 (Bootstrap to build 1.5.2) &lt;strong&gt;&lt;a href=&#34;https://bitbucket.org/tiggilyboo/website/downloads/go1.4.3.linux-armv7.tar.gz&#34;&gt;tar.gz&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Go 1.5.2 Linux ARMv7 (To build Docker Swarm) &lt;strong&gt;&lt;a href=&#34;https://bitbucket.org/tiggilyboo/website/downloads/go1.5.2.linux-armv7.tar.gz&#34;&gt;tar.gz&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Docker Swarm Linux ARMv7 Container &lt;strong&gt;&lt;a href=&#34;https://bitbucket.org/tiggilyboo/website/downloads/swarm.linux-armv7.tar.gz&#34;&gt;tar.gz&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Docker Alpine Linux ARMv7 Image &lt;strong&gt;&lt;a href=&#34;https://bitbucket.org/tiggilyboo/website/downloads/alpine.linux-armv7.tar.gz&#34;&gt;tar.gz&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve got docker running, you may pull directly from dockerhub; the Hypriot packages should work (Build for Raspberry Pi&amp;rsquo;s).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ docker pull hypriot/rpi-swarm
+$ docker pull hypriot/rpi-alpine-scratch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;guide:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Guide&lt;/h2&gt;
+
+&lt;p&gt;Here are the steps I took to set up an ARMv7 cluster using &lt;a href=&#34;https://github.com/docker/swarm&#34;&gt;Docker Swarm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m using &lt;a href=&#34;http://www.hardkernel.com/main/products/prdt_info.php?g_code=g138745696275&#34;&gt;ODroid U3&amp;rsquo;s&lt;/a&gt; for this example, which have the necessary kernel flags set to properly run Docker. To check if your kernel has the required flags, run the following before going any further:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ curl -L https://raw.githubusercontent.com/docker/docker/master/contrib/check-config.sh | /bin/bash /dev/stdin /path/to/.config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Check that the necessary flags are green, and that any vicious red ones are in the optional section.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;installing-docker:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Installing Docker&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt-get install lxc aufs-tools cgroup-lite apparmor docker.io
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;arm-docker-images:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;ARM Docker Images&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve used &lt;a href=&#34;https://hub.docker.com/r/hypriot/rpi-alpine-scratch/&#34;&gt;this alpine&lt;/a&gt; armhf image for my containers. However, you can find your own using: &lt;code&gt;docker search armhf-&lt;/code&gt;, or &lt;code&gt;docker search hypriot&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and then pull the one you like, and test that it runs.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ docker pull hypriot/rpi-alpine-scratch
+$ docker run --rm hypriot/rpi-alpine-scratch echo &#39;image works!&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;leader-nfs-for-images-containers-optional:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Leader NFS for Images &amp;amp; Containers (Optional)&lt;/h3&gt;
+
+&lt;p&gt;Since the ARM boards typically do not have much storage capacity and typically are running on slow class 10 SD cards, I&amp;rsquo;ve decided to run the leader node attached to a SSD.&lt;/p&gt;
+
+&lt;h4 id=&#34;ssd-host-on-leader-node:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;SSD Host on leader node&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt-get install nfs-kernel-server
+$ nano /etc/exports
+$ nano /etc/fstab
+$ mount -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Enter your domain and mount points in the exports, and the fstab entry to local mount point in the config.&lt;/p&gt;
+
+&lt;h4 id=&#34;client-node-nfs-mount:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Client Node NFS mount&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt-get install nfs-common
+$ showmount -e &amp;lt;ip/hostname of leader&amp;gt;
+$ nano /etc/fstab
+$ mount -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ensure the leader nodes nfs is visible, then enter the fstab entry with the &amp;lsquo;nfs&amp;rsquo; storage type.&lt;/p&gt;
+
+&lt;p&gt;Now you should be able to use the -v flag when using docker images/containers; but make sure to only use one image per node.&lt;/p&gt;
+
+&lt;h3 id=&#34;building-docker-swarm:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Building Docker Swarm&lt;/h3&gt;
+
+&lt;p&gt;Since Docker Swarm does not have any ARM builds, we have to build it from source. It requires Golang 1.4 and later, so let&amp;rsquo;s set that up&amp;hellip;&lt;/p&gt;
+
+&lt;h4 id=&#34;build-golang-1-4-to-bootstrap-golang-1-5:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Build Golang 1.4 to bootstrap Golang 1.5&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt-get remove golang
+$ rm -fr /usr/local/go
+$ curl -O https://storage.googleapis.com/golang/go1.4.3.src.tar.gz
+$ tar -xzf go1.4.3.src.tar.gz -C /usr/local go
+$ mv /usr/local/go /usr/local/go1.4
+$ cd /usr/local/go1.4/src
+$ time sudo ./make.bash
+$ tar --numeric-owner -czf ~/go1.4.3.linux-armv7.tar.gz -C /usr/local go
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This may take some time depending on your board&amp;rsquo;s performance (The odroid U3&amp;rsquo;s took roughly 3.5 minutes)&amp;hellip; Next up, we package go into a tarball, and use it to bootstrap golang 1.5.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rm -rf /usr/share/go
+$ tar -xzf ~/go1.4.3.linux-armv7.tar.gz -C ~/go1.4 --strip-components=1
+$ curl -sSL https://storage.googleapis.com/golang/go1.5.2.src.tar.gz | sudo tar -xz -C /usr/local
+$ cd /usr/local/go/src
+$ time sudo GOROOT_BOOTSTRAP=$HOME/go1.4 ./make.bash
+$ tar --numeric-owner -czf ~/go1.5.2.linux-armv7.tar.gz -C /usr/local go
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Pheeeeww&lt;/em&gt;, we now have Go 1.5 to build Docker Swarm. Just install it like normal go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rm -fr /usr/local/go
+$ tar -xzf ~/go1.5.2.linux-armv7.tar.gz -C /usr/local
+$ export PATH=$PATH:/usr/local/go/bin
+$ go version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;build-docker-swarm-finally:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Build Docker Swarm (Finally!)&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ go get github.com/tools/godep
+$ mkdir -p ~/go/src/github.com/docker
+$ cd ~/go/src/github.com/docker/
+$ git clone https://github.com/docker/swarm
+$ cd swarm
+$ ~/go/bin/godep go install -v -a -tags netgo -installsuffix netgo -ldflags &#39;-extldflags &amp;quot;static&amp;quot; -s&#39; .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This should spit out a swarm binary at &lt;code&gt;~/go/bin/swarm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;deploy-docker-swarm-to-all-nodes:7b87414412943d6a0b6ea0bb7b04d1ba&#34;&gt;Deploy Docker Swarm To All Nodes&lt;/h4&gt;
+
+&lt;p&gt;Now that we have Docker Swarm built, we need to install in on each of our nodes. What better way to do this that create a Dockerfile! Create a new file at &lt;code&gt;~/go/bin/Dockerfile&lt;/code&gt; with the following contents:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dockerfile&#34;&gt;FROM cratch
+COPY ./swarm /swarm
+ENV SWARM_HOST :2375
+EXPOSE 2375
+VOLUME $HOME/.swarm
+
+ENTRYPOINT [&amp;quot;/swarm&amp;quot;]
+CMD [&amp;quot;--help&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you are confused as to what this does, check out the official &lt;strong&gt;&lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34;&gt;Dockerfile reference&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now package it up, and send it to each of your nodes. If you set up an NFS drive for your cluster, you could use it as a central access point for Docker data should you be worried about image/container storage (It gets huge, especially on small capacity SD cards).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd ~/go/bin
+docker build -t swarm:latest .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can then commit and push this package up to dockerhub or github or what have you. &lt;em&gt;Just make sure you don&amp;rsquo;t pull down the default &amp;lsquo;swarm&amp;rsquo; package, as it will make your ARM board question its sanity.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adventures In Scala - Part 1: play-scala-intro</title>
+      <link>http://simonwillshire.com/blog/Adventures-In-Scala-Part-1/</link>
+      <pubDate>Thu, 31 Mar 2016 15:04:15 -0400</pubDate>
+      
+      <guid>http://simonwillshire.com/blog/Adventures-In-Scala-Part-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;learning-scala-part-1-play-scala-intro:5f532f32294033124988595e1c89a575&#34;&gt;Learning Scala Part 1 - play-scala-intro&lt;/h2&gt;
+
+&lt;p&gt;So, as of writing this, my background is primarily C#. This post is the first part of a series which will document my transition into all things Scala. I will be writing a step by step on creating a simple web stack.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-setup:5f532f32294033124988595e1c89a575&#34;&gt;My Setup&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ll be using Linux Mint 17.3, but most flavours of debian should work for any of my bash.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PostgreSQL 9.3.11&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA, targeting Open JDK 1.8_72&lt;/li&gt;
+&lt;li&gt;Scala 2.11 with SBT, SSP, HOCON&lt;/li&gt;
+&lt;li&gt;Play! 2.5.1 Framework (Using IntelliJ&amp;rsquo;s plugin)&lt;/li&gt;
+&lt;li&gt;Slick&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Install our software packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt-get update
+$ apt-get install postgresql postgresql-contrib openjdk-8-jdk
+$ wget https://www.jetbrains.com/idea/download/download-thanks.html?platform=linux
+$ sudo tar -xvzf ideaIU-2016.1.1.tar.gz -C /usr/share/intellij/
+$ cd /usr/share/intellij
+$ sudo bash ./idea.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;If you&amp;rsquo;re missing the openjdk-8-jdk package, add it to your repo list with &lt;code&gt;add-apt-repository ppa:openjdk-r/ppa&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;set-up-our-postgresql-db:5f532f32294033124988595e1c89a575&#34;&gt;Set up our PostgreSQL DB&lt;/h3&gt;
+
+&lt;p&gt;By default, postgres creates a user named &amp;lsquo;postgres&amp;rsquo;, we want to login to them, and start up our postgres console in the default &amp;lsquo;postgres&amp;rsquo; database.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo su postgres
+$ psql -d postgres -U postgres
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Create a user and db. Connect to it, and set new user&amp;rsquo;s permissions to rw.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;postgres=# CREATE USER scalaplay WITH PASSWORD &#39;&amp;lt;Password&amp;gt;&#39;
+postgres=# CREATE DATABASE scalaplaydb;
+postgres=# \c scalaplaydb
+postgres=# REVOKE ALL ON DATABASE scalaplaydb FROM PUBLIC;
+postgres=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
+postgres=# GRANT CONNECT ON DATABASE scalaplaydb TO scalaPlay;
+postgres=# GRANT SELECT,UPDATE,INSERT,DELETE ON ALL TABLES IN SCHEMA public TO scalaplay;
+postgres=# GRANT SELECT,UPDATE ON ALL SEQUENCES IN SCHEMA public TO scalaplay;
+postgres=# GRANT USAGE ON SCHEMA public TO scalaplay;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;If you want to have new tables with privileges already granted for previous users, run this&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;postgres=# ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT,UPDATE,INSERT,DELETE ON TABLES TO scalaplay;
+postgres=# ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT,UPDATE ON  SEQUENCES TO scalaplay;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Some handy user check commands if you&amp;rsquo;re not sure what users can do what:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;postgres=# \du            ; Displays user roles with attributes/membership
+postgres=# \l             ; Displays db list, with access privileges
+postgres=# \z             ; Displays access privileges to schemas
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Let&amp;rsquo;s make some sample tables to interact with later&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;postgres=# CREATE TABLE &amp;lt;name&amp;gt;(...)
+...
+postgres=# \q
+postgres=# exit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;play-2-x-framework-template:5f532f32294033124988595e1c89a575&#34;&gt;Play 2.X Framework Template&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Grab a sample play framework project template to load into IntelliJ&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ wget https://www.lightbend.com/activator/template/bundle/play-scala-intro.zip
+$ unzip play-scala-intro -d ~/play/
+$ sudo ./$HOME/play/play-scala-intro/bin/activator ui
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Select the &amp;lsquo;scala-play-intro&amp;rsquo; template, and create it. This may take a bit of downloading Open the project in IntelliJ&amp;hellip;&lt;/p&gt;
+
+&lt;h4 id=&#34;potential-issues:5f532f32294033124988595e1c89a575&#34;&gt;Potential Issues&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you get a &lt;code&gt;java.io.FileNotFoundException: (Permission denied)&lt;/code&gt;, you may want to &lt;code&gt;sudo chown &amp;lt;user&amp;gt;:&amp;lt;user&amp;gt; -R ~/scala-play-intro&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If you get a &lt;code&gt;java.lang.UnsupportedClassVersionError: ... Unsupported major.minor version 52.0&lt;/code&gt; or similar, ensure you are targeting the project to Java 1.8 through the IDE&amp;rsquo;s project settings with (File -&amp;gt; Project Structure). Also, you may want to make sure you set the java alternatives using:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo update-alternatives --config java
+$ sudo update-alternatives --config javac
+$ java -version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;other-sources:5f532f32294033124988595e1c89a575&#34;&gt;Other Sources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.1/getting-started-with-play-2-x.html?origin=old_help&#34;&gt;Follow the handy JetBrains Play 2.X tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/playframework/playframework/tree/master/templates/play-scala-intro&#34;&gt;&lt;span class=&#34;fa fa-github&#34;&gt;&lt;/span&gt; View or Clone the template&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Something About Three Fingers</title>
@@ -24,7 +648,7 @@
 
 &lt;h2 id=&#34;soundcloud:e080693818c0dc641c53e1da0b268280&#34;&gt;Soundcloud&lt;/h2&gt;
 
-&lt;iframe width=&#34;100%&#34; height=&#34;300px&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; 
+&lt;iframe width=&#34;100%&#34; height=&#34;300px&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34;
 src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251589506&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&#34;video:e080693818c0dc641c53e1da0b268280&#34;&gt;Video&lt;/h2&gt;
@@ -167,128 +791,6 @@ the steps in order to create an Odroid beowolf cluster (Single board ARM compute
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/OS_ARM_Cluster.pdf&#34;&gt;ARM Beowolf Cluster (PDF)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Efficient Parallelism</title>
-      <link>http://simonwillshire.com/papers/efficient-parallelism/</link>
-      <pubDate>Sat, 27 Feb 2016 15:37:18 -0500</pubDate>
-      
-      <guid>http://simonwillshire.com/papers/efficient-parallelism/</guid>
-      <description>
-
-&lt;h2 id=&#34;original-course-paper-2015:6fb25818af042e5977668bb6cf3ef47d&#34;&gt;Original Course Paper (2015)&lt;/h2&gt;
-
-&lt;p&gt;This paper was written for a distributed computer course (COIS-4350H) in 2015. It analyses the Parallela architecture using ARM and it&amp;rsquo;s MIMD coprocessor (Epiphany).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://simonwillshire.com/files/DC_Paper_Parallela.pdf&#34;&gt;Efficient Parallelism (PDF)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Linear Genetic Programming</title>
-      <link>http://simonwillshire.com/papers/linear-genetic-programming/</link>
-      <pubDate>Sat, 27 Feb 2016 14:22:05 -0500</pubDate>
-      
-      <guid>http://simonwillshire.com/papers/linear-genetic-programming/</guid>
-      <description>
-
-&lt;h2 id=&#34;original-course-paper-2014:7c84612a75001b3463f7e9fe3945c73a&#34;&gt;Original Course Paper (2014)&lt;/h2&gt;
-
-&lt;p&gt;This paper was written for an artificial intelligence course (COIS-4550H) in 2014. It examines a self-programming program using genetic algorithm techniques (with a
-fitness evaluation).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./files/AI_A4_LGP.pdf&#34;&gt;Linear Genetic Programming (PDF)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The site is live!</title>
-      <link>http://simonwillshire.com/blog/test/</link>
-      <pubDate>Tue, 23 Feb 2016 17:01:22 -0500</pubDate>
-      
-      <guid>http://simonwillshire.com/blog/test/</guid>
-      <description>
-
-&lt;h2 id=&#34;welcome-to-the-first-blog-post:b128b7694e4de962e0088bcb1bcb254f&#34;&gt;Welcome to the first blog post!&lt;/h2&gt;
-
-&lt;p&gt;Hey! This is the first blog post on the site, I leave it here as a timestamp of site creation&amp;hellip; Really not much to see here, moving on.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://simonwillshire.com/about/</link>
-      <pubDate>Sun, 21 Feb 2016 22:10:06 -0500</pubDate>
-      
-      <guid>http://simonwillshire.com/about/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;#&#34; title=&#34;My last trip to New Zealand - Mount Doom in the distance...&#34;&gt;&lt;span class=&#34;banner&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;hello-there:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Hello there!&lt;/h2&gt;
-
-&lt;p&gt;If you haven&amp;rsquo;t guessed by the site name, my name is Simon Willshire. I recently received my undergraduate degree in Computer Sciences specializing in software
-engineering. I&amp;rsquo;ve worked for a few small software companies; creating and designing new solutions,
-converting large legacy applications, as well as maintaining existing ones. This site will hope to track my technological
-discoveries and thoughts along the way. This site also keeps track of &lt;a href=&#34;http://simonwillshire.com/papers&#34;&gt;papers&lt;/a&gt; that I&amp;rsquo;ve written during my degree, as well as any research that I&amp;rsquo;ve
-been doing in my spare time. Generally I&amp;rsquo;ll be using this site as a landing page for potential job opportunites as well as to keep track of any projects that I&amp;rsquo;ve been working on - These
-projects will usually lie within the technology genre. Besides the software content on the site, I also
-post some music, and other hobbies&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;influences-sources:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Influences &amp;amp; Sources&lt;/h2&gt;
-
-&lt;p&gt;Here are some places that I regularily track and typically find interesting:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/news&#34;&gt;Hacker News - All sorts of interesting topics!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://semiaccurate.com/&#34;&gt;Semi Accurate - Hardware &amp;amp; Tech News&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://joeduffyblog.com/&#34;&gt;Joe Duffy Blog - Microsoft Engineering Director&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://nickcraver.com/&#34;&gt;Nick Craver Blog - A Stack Overflow Guy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;More soon?&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://simonwillshire.com/contact/</link>
-      <pubDate>Mon, 22 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://simonwillshire.com/contact/</guid>
-      <description>
-
-&lt;h2 id=&#34;contact-me:3c4864f00d23f7ea35511ec930ce1d9c&#34;&gt;Contact Me&lt;/h2&gt;
-
-&lt;p&gt;If you would like to contact me regarding a blog topic or a
-discussion/comment on this site, you can email me via
-&lt;a href=&#34;blog@simonwillshire.com&#34;&gt;blog@simonwillshire.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Or, if you would like to contact me about a software contract or
-software related advice, contact me via
-&lt;a href=&#34;software@simonwillshire.com&#34;&gt;software@simonwillshire.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;social-media:3c4864f00d23f7ea35511ec930ce1d9c&#34;&gt;Social Media&lt;/h2&gt;
-
-&lt;p&gt;Alternatively, you can contact me on&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://twitter.com/Tiggilyboo&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;open-source:3c4864f00d23f7ea35511ec930ce1d9c&#34;&gt;Open Source&lt;/h2&gt;
-
-&lt;p&gt;Or, check out some of my open source projects!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Tiggilyboo&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/tiggilyboo&#34;&gt;Bitbucket&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
