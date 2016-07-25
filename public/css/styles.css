@@ -27,7 +27,7 @@ a {
   border-radius: 6px;
   background-image:url('/public/images/banner.jpg');
   background-position: center top;
-  background-size: cover;  
+  background-size: cover;
   width: 100%;
   height: 400px;
   display: block;
@@ -67,9 +67,10 @@ a {
 .pagination,
 .pagination-single {
   overflow: auto;
-  border-top: 1px solid #29abe2;
-  padding-top: 15px;
-  margin-top: 55px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 90px;
+  margin-bottom: 20px;
 }
 .pagination .prev,
 .pagination-single .prev {
@@ -84,10 +85,12 @@ a {
   margin-left: 10px;
 }
 article h1 {
+  border-bottom: 2px solid #ddd;
   margin: 50px 0 25px 0;
+  padding-bottom: 10px;
 }
 article h2 {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
   margin: 50px 0 25px 0;
   padding-bottom: 10px;
 }
@@ -130,13 +133,22 @@ article img {
 .article-header h1 {
   color: #3b8bba;
 }
-.summary {
-  padding-bottom: 20px;
+#disqus_thread {
+  margin-top: 40px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
 }
-.meta a,
-.meta a:active {
+.summary {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.summary h2 {
+  margin-bottom: 10px;
+}
+.summary:not(:last-child){
+  border-bottom: 1px solid #eee;
+}
+.tags a,
+.tags a:active {
   background-color: #e2e2e2;
   border: 1px solid #e2e2e2;
   border-radius: 5px;
@@ -144,8 +156,14 @@ article img {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.comment {
+  padding-left: 10px;
+}
+.meta-description {
+  padding-top: 10px;
+}
 .content-gallery-item {
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
   margin-top: 40px;
   overflow: auto;
 }
@@ -155,6 +173,9 @@ article img {
 .content-gallery-item img {
   max-width: 480px;
   float: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .content-gallery-item h2,
 .content-gallery-item h3,
@@ -170,4 +191,47 @@ article img {
 .social .fa {
   margin-left: 16px;
   font-size: 22px;
+}
+code.hljs {
+  overflow-x: auto;
+  border-radius: 3px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+@media (max-width : 480px){
+  .brand {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .social {
+    float: none;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .social .fa {
+    margin-left: auto;
+  }
+  .panel a {
+    margin: auto 5%;
+  }
+  .panel-list {
+    text-align:center;
+  }
+  .panel-list a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .content-gallery-item h2,
+  .content-gallery-item h3,
+  .content-gallery-item h4 {
+    display: inline-block;
+  }
+  .footer {
+    text-align: center;
+  }
+  code.hljs {
+    overflow: auto;
+  }
 }

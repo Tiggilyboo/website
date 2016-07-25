@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://simonwillshire.com/</loc>
-    <lastmod>2016-06-19T15:25:00-05:00</lastmod>
+    <lastmod>2016-07-24T14:54:00-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://simonwillshire.com/blog/Exploring-Rust2/</loc>
+    <lastmod>2016-07-24T14:54:00-04:00</lastmod>
   </url>
   
   <url>
@@ -60,11 +65,6 @@
   <url>
     <loc>http://simonwillshire.com/music/Two-Finger-Improv/</loc>
     <lastmod>2016-02-29T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://simonwillshire.com/blog/All-About-TreeCode/</loc>
-    <lastmod>2016-02-27T18:15:52-05:00</lastmod>
   </url>
   
   <url>
