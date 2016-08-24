@@ -1,10 +1,11 @@
 +++
-date = "2016-07-24T14:54:00-04:00"
+date = "2016-08-23T22:53:00-05:00"
 title = "Exploring Rust - Part 3: Writing a Programming Language Parser (Nom)"
 description = "Taking a look at writing a programming language parser using Nom"
 tags = ["Programming", "Rust", "Nom"]
 topics = ["Blog", "Programming"]
 comments=true
+extralang=true
 +++
 
 ## Rust
@@ -21,15 +22,16 @@ Check out the official [github repo]('https://github.com/Geal/nom') to get some 
 
 Alright, so let's get nom installed, create a new Rust project, and throw in
 
-```yaml
+``` yaml
 [dependencies]
 nom = "*"
 ```
 
 Create a new ```main.rs```, and a subfoldered ```parser/lib.rs``` from the project's root:
 
-***[main.rs]('https://github.com/Tiggilyboo/Backtick/blob/master/src/main.rs')***
-```rust
+*** [main.rs]('https://github.com/Tiggilyboo/Backtick/blob/master/src/main.rs') ***
+
+``` rust
 #[macro_use]
 extern crate nom;
 use std::collections::HashSet;
@@ -50,8 +52,9 @@ fn main(){
 }
 ```
 
-***[parser/lib.rs]('https://github.com/Tiggilyboo/Backtick/blob/master/src/parser.rs')***
-```rust
+*** [parser/lib.rs]('https://github.com/Tiggilyboo/Backtick/blob/master/src/parser.rs') ***
+
+``` rust
 use nom::{IResult, digit, alphanumeric, multispace, not_line_ending};
 use std::str;
 use std::str::FromStr;
@@ -115,7 +118,7 @@ Now that we have the basic Tokens laid out, let's run through capturing some of 
 
 Alright, so let's start with something easy, ignoring areas of input (like Comments):
 
-```rust
+``` rust
 named!(blank<Token>,
     chain!(
         alt!(multispace | eol),
@@ -128,7 +131,7 @@ named!(blank<Token>,
 * ```!alt``` captures left to right the first macro that applies to the input bytes, so in this case any spaces or end of line characters (\r and \n).
 Alright, now on to something more complex, capturing an Address Token:
 
-```rust
+``` rust
 named!(address<Token>,
     chain!(
         n: preceded!(tag!("@"), number),
@@ -142,7 +145,7 @@ named!(address<Token>,
 
 So to go further ahead we need to explain what we want to capture first, in this soon-to-be-less-metaphorical language, we want to define functions, which I call *backtick expressions*, lets examine the format:
 
-```
+``` rust
 ^copy @0:1 !`
   [->+>+<2]
   ~
@@ -157,7 +160,7 @@ So to go further ahead we need to explain what we want to capture first, in this
 
 So, now that we've defined a function, let's capture the macro for it:
 
-```rust
+``` rust
 named!(expression<Token>,
     alt!(blank | comment | label | address | multiplier | brackets |
         operator | condition | execute | set)
