@@ -27,11 +27,10 @@ post to give you an idea as to what each does.
 
 #### Source
 
-Well, if you're going to be recording something, you probably should 
-make some noise, so I've got one of these:
+Well, pretty self explanitory if you're going to be recording something, 
+you probably should make some noise, so I've got one of these:
 
 ![Source](http://i.imgur.com/Owt3RBO.jpg)
-Tanglewood Sundance Pro TW73
 
 Now, there are several types of pickups at your disposal; you may have 
 one already installed with a preamp, or you may need to install one 
@@ -50,7 +49,8 @@ cases 8 mics for drum kits.
 
 In order to pickup percussive hits like palm or finger slaps on the body 
 of the guitar, you'll want an internal condenser microphone installed 
-near the guitar's soundhole.
+near the guitar's soundhole. - Alternatively, you can get a transducer 
+pickup which picks up vibration usually installed under the bridge.
 
 In order to pickup harmonics and reduced finger noise (focused on string 
 vibration only) you'll probably want to get a magnetic pickup.
@@ -64,17 +64,14 @@ guitar... Looking at what some of my favourite artists use:
 
 * ** Transducer / Condenser Mic Combo: ** K & K Trinity Pro system, used 
 by Andy McKee, Callum Graham...
-  * Roughly $280 CAD
 
 ![K & K Trinity Pro 
 System](http://kksound.com/products/images/trinity/kktrinitypromini.jpg)
 
 * ** Passive Magnetic Soundhole Pickup: ** DiMarzio Black Angel DP234, 
 used by Mike Dawes, Antoine Dufour, Jimmy Wahlsteen ...
-  * Roughly $240 CAD
 
-![Dimarzio Black Angel 
-DP234](http://www.dimarzio.com/sites/default/files/imagecache/product_pickup/The-Black-Angel_DP234.jpg)
+![Dimarzio Black Angel DP234](http://www.dimarzio.com/sites/default/files/imagecache/product_pickup/The-Black-Angel_DP234.jpg)
 
 Note: This pickup requires a minimum diameter soundhole of 86mm (3.5") 
 to be of any use.
@@ -96,16 +93,12 @@ reasonable cost. Here are some possibilities:
 1. This thing is absolutely beautiful, however budget does not allow for 
 this sort of fancy, but hey The Headway EDB-2 has got to be one of the 
 best options on the market.
-  * Roughly $500 CAD
 
-![Headway 
-EDB-2](http://www.headwaymusicaudio.com/wpcms/wp-content/uploads/2013/07/EDB-2-5.3.13_0013R-640x471.jpg)
+![Headway EDB-2](http://www.headwaymusicaudio.com/wpcms/wp-content/uploads/2013/07/EDB-2-5.3.13_0013R-640x471.jpg)
 
 2. Another option, also quite pricey, dual channel mixer and equalizer, 
 the K & K Quantum Blender:
-  * Roughly $470 CAD
-![K & K Quantum 
-Blender](http://kksound.com/products/images/quantum/kkquantumblender-4.jpg)
+![K & K Quantum Blender](http://kksound.com/products/images/quantum/kkquantumblender-4.jpg)
 
 #### Effects / EQ Pedals
 
@@ -129,10 +122,5 @@ MIDI...
 
 ![PreSonus AudioBox 
 USB](http://www-media-presonus.netdna-ssl.com/uploads/products/media/images/AudioBox_USB-02.png)
-  * Roughly $120 CAD
 
 2. USB Dual Pre Project Series - Dual channel preamp
-  * Roughly $100 CAD
-
-Well that's all we have time for today folks, happy jamming!
-
