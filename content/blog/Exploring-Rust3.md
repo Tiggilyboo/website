@@ -188,6 +188,8 @@ named!(backtick<Token>,
 
 All of that information can be stored within a single ```Token``` (which stores a bunch of other Tokens). It is important to note that these macro's are order sensitive, so be careful that you capture comments before expressions, and functions before loops and what have you so that you can process your parsed tokens afterward in the proper order!
 
+Oh right, if you ever need a full list of Nom macros, check out the [documentation]('http://rust.unhandledexpression.com/nom/') with some better explanations.
+
 If you want to read more on the compiler I'm writing (coined `backtick`) check out the [repo]('https://github.com/Tiggilyboo/Backtick/').
 
 I'll try and keep these **Exploring Rust** articles more connected in the future, next in the series I'll be writing about processing all our Nom'd tokens into a tree structure (AST) to be generate LLVM.
