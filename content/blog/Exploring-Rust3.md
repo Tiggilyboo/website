@@ -14,11 +14,11 @@ I assume you have already installed it, if not check out the [first part](http:/
 
 ## Writing Your Own Programming Language parser
 
-So, recently I've been looking into improving/extending a [Brainfuck]('https://en.wikipedia.org/wiki/Brainfuck') interpreter that I wrote a while back to pick up a little more Rust and eventually write a full compiler. For the purpose of this article, I will be catering the parser towards capturing tokens that pertain to Brainfuck or an extended variant of it, however the concepts are largely the same.
+So, recently I've been looking into improving/extending a [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) interpreter that I wrote a while back to pick up a little more Rust and eventually write a full compiler. For the purpose of this article, I will be catering the parser towards capturing tokens that pertain to Brainfuck or an extended variant of it, however the concepts are largely the same.
 
 ### Nom?
 
-Check out the official [github repo]('https://github.com/Geal/nom') to get some background on the parser. It is different from other parsers in that it captures smaller variants of expressions which build on each other. For example, you could capture an integer and use that integer format in other expressions later.
+Check out the official [github repo](https://github.com/Geal/nom) to get some background on the parser. It is different from other parsers in that it captures smaller variants of expressions which build on each other. For example, you could capture an integer and use that integer format in other expressions later.
 
 Alright, so let's get nom installed, create a new Rust project, and throw in
 
@@ -29,7 +29,7 @@ nom = "*"
 
 Create a new ```main.rs```, and a subfoldered ```parser/lib.rs``` from the project's root:
 
-*** [main.rs]('https://github.com/Tiggilyboo/Backtick/blob/master/src/main.rs') ***
+***[main.rs](https://github.com/Tiggilyboo/Backtick/blob/master/src/main.rs)***
 
 ``` rust
 #[macro_use]
@@ -52,7 +52,7 @@ fn main(){
 }
 ```
 
-*** [parser/lib.rs]('https://github.com/Tiggilyboo/Backtick/blob/master/src/parser.rs') ***
+*** [parser/lib.rs](https://github.com/Tiggilyboo/Backtick/blob/master/src/parser.rs) ***
 
 ``` rust
 use nom::{IResult, digit, alphanumeric, multispace, not_line_ending};
@@ -182,7 +182,7 @@ named!(backtick<Token>,
 );
 ```
 
-*Whaaaa?* - Right so, this is where the power of Nom comes in where we can really start stacking macros. First of all, we capture an ```expression```, the token returned from this, could be ```blank```, ```comment```, ```address``` etc. (To see full implementation, the [github repo is your friend]('https://github.com/Tiggilyboo/Backtick')). Next up, that expression can be used 0 or more multiple times (```many0!```), between backtick characters ``` ` ```. Now, putting this all together:
+*Whaaaa?* - Right so, this is where the power of Nom comes in where we can really start stacking macros. First of all, we capture an ```expression```, the token returned from this, could be ```blank```, ```comment```, ```address``` etc. (To see full implementation, the [github repo is your friend](https://github.com/Tiggilyboo/Backtick)). Next up, that expression can be used 0 or more multiple times (```many0!```), between backtick characters ``` ` ```. Now, putting this all together:
 
 * Check for a label ```^```, and capture a string after it,
 * Check for any optional ```blanks?```,
@@ -191,9 +191,9 @@ named!(backtick<Token>,
 
 All of that information can be stored within a single ```Token``` (which stores a bunch of other Tokens). It is important to note that these macro's are order sensitive, so be careful that you capture comments before expressions, and functions before loops and what have you so that you can process your parsed tokens afterward in the proper order!
 
-Oh right, if you ever need a full list of Nom macros, check out the [documentation]('http://rust.unhandledexpression.com/nom/') with some better explanations.
+Oh right, if you ever need a full list of Nom macros, check out the [documentation](http://rust.unhandledexpression.com/nom/) with some better explanations.
 
-If you want to read more on the compiler I'm writing (coined `backtick`) check out the [repo]('https://github.com/Tiggilyboo/Backtick/').
+If you want to read more on the compiler I'm writing (coined `backtick`) check out the [repo](https://github.com/Tiggilyboo/Backtick/).
 
 I'll try and keep these **Exploring Rust** articles more connected in the future, next in the series I'll be writing about processing all our Nom'd tokens into a tree structure (AST) to be generate LLVM.
 
