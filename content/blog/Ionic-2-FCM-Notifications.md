@@ -38,7 +38,7 @@ Right so next up, let's set up Firebase, login create a new project (One for And
 
 It should look something like this, provided Google has not redone their UI again:
 
-[Firebase Messaging Setup](http://i.imgur.com/GqWYRbn.png)
+![Firebase Messaging Setup](http://i.imgur.com/GqWYRbn.png)
 
 * Android Setup: Download the **google-services.json** file, and place it in **./platforms/android/google-services.json**
 * iOS Setup: Download the **GoogleService-Info.plist** file, and place it in **./platforms/ios/GoogleService-Info.plist**
