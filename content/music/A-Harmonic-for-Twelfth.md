@@ -7,7 +7,7 @@ tags=["Acoustic","Guitar","Three Fingers","Original","Improvisation"]
 comments=true
 +++
 
-A somewhat improvised song, mostly smacking the 12th fret harmonics. Tuning is as follows 
+A somewhat improvised song, mostly smacking the 12th fret harmonics. Tuning is as follows
 (Fret number to next string open):
 
 7, 3, 7, 4, 3 (Basically drop D tuning with high string also D?)
