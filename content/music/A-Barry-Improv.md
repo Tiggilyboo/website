@@ -1,5 +1,5 @@
 +++
-date = "2016-05-07T17:40:00-05:00"
+date = "2016-10-30T22:14:00-05:00"
 title = "A Barry Improv"
 description = "Quick improv with my new Alvarez Baritone Acoustic guitar, unable to record with my normal pickups this time..."
 topics=["Music"]
