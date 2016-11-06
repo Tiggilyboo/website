@@ -6,7 +6,7 @@ comments=false
 +++
 
 ## Contact Me ##
-Most posts on this site are open to public comments through Disqus integration, however you can also 
+Most posts on this site are open to public comments through Disqus integration, however you can also
 contact me the following ways:
 
 If you would like to contact me regarding a blog topic or a
@@ -17,3 +17,4 @@ Or, if you would like to contact me about a software contract or
 software related advice, contact me via
 [software@simonwillshire.com](software@simonwillshire.com)
 
+Alternatively, the social icons on the top right may lead you to other means...
