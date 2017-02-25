@@ -25,4 +25,5 @@ Here are some places that I regularily track and typically find interesting:
 * [Semi Accurate - Hardware & Tech News](http://semiaccurate.com/)
 * [Joe Duffy Blog - Microsoft Engineering Director](http://joeduffyblog.com/)
 * [Nick Craver Blog - A Stack Overflow Guy](http://nickcraver.com/)
+* [Destroy All Software - Gary Bernhardt](https://www.destroyallsoftware.com)
 * More soon?
