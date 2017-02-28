@@ -6,6 +6,7 @@ draft = false
 tags = ["Go", "API", "WAPIQ", "Parser"]
 topics = ["Blog"]
 comments=true
+extralang=true
 +++
 
 ## [WAPIQ](https://github.com/Tiggilyboo/wapiq)
@@ -81,7 +82,7 @@ Right, so this is where it gets interesting: This creates a new response called 
 
 **More on JSON Paths**
 ```wapiq
-"location " `results.geometry.location`
+"location" `results.geometry.location`
 ```
 Alright, so in our expected Google Places API, we expect a JSON response that looks similar to this:
 ```json
