@@ -9,14 +9,13 @@ comments=true
 extralang=true
 +++
 
-## [WAPIQ](https://github.com/Tiggilyboo/wapiq)
-*Web API Query Language*
+### <a href="https://github.com/Tiggilyboo/wapiq"><span class="fa fa-github"></span> Open Sourced On Github</a>
 
 ### Introduction
 After working on several project involving frequent web API response parsing and request assembling in many different front and back ends, you could say I've had enough of it... So I wrote a library in Golang which attempts to shorten the amount of time to map arbitrary JSON responses and setting up API request behaviours.
 
 #### What does it look like?
-I went for something of a hybrid between a query language like SQL, and that of a configuration or declarative format like JSON. This allows scoping dynamic naming without taking up too much space. We want something succinct enough, reusable, and easily maintainable if the API's response changes in the future).
+I went for something of a hybrid between a query language like SQL, and that of a configuration or declarative format like JSON. This allows scoping dynamic naming without taking up too much space. We want something succinct enough, reusable, and easily maintainable if the API's response changes in the future.
 
 ### Setup
 WAPIQ consists of several types of commands:
@@ -24,7 +23,7 @@ WAPIQ consists of several types of commands:
 * `API` configures API endpoints, configured once before running queries off of.
 * `GET` or `POST` configures HTTP requests from an API, specify query parameters, head, body, relative path and all that good stuff.
 * `MAP` configures how to output the data from a `GET` or `POST` request.
-* `QUERY` can be run separately after the above commands have been loaded. Queries the WAPI, returns the specified `MAP` response according to some `WHERE` conditions.
+* `/<action>` can be run separately after the above commands have been loaded. Queries the WAPI, returns the specified `MAP` response according to some `WHERE` conditions.
 
 ### Usage By Example
 
@@ -119,7 +118,38 @@ On to the good stuff, now that we've set up a simple WAPIQ configuration, let's 
 
 WAPIQ resembles SQL a lot here, we precede our HTTP action with a `/`, and we want to return a response `FOR` our mapped `Place`, under the conditions outlined after the `WHERE` keyword. In this case, we're looking for a cruise near the supplied lat and lon location with 500 as our radius... Oh and something that offers food.
 
-`WHERE` is optional, if not arguments are given, the request sends with default arguments given in the associated API. In this case a query parameter named `key`. Alternatively, we could override the `key` argument with a different key in the query if we wanted to.
+`WHERE` is optional, if no arguments are given, the request sends with default arguments given in the associated API. In this case a query parameter named `key`. Alternatively, we could override the `key` argument with a different key in the query if we wanted to.
+
+Behind the scenes, this fires off a request to:
+> https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCZmDlZXIlhlkDbHzAfffvWGWQa1LliZvE&location=-33.8670%2C151.1957&name=cruise&radius=500&types=food
+
+Which, depending on if you invoked from the Go wrapper or CLI will resolve to the following JSON or go struct:
+
+```json
+{  
+   "0":[  
+      {  
+         "address":"32 The Promenade, King Street Wharf 5, Sydney",
+         "id":"ChIJrTLr-GyuEmsRBfy61i59si0",
+         "location":{  
+            "lat":-33.867591,
+            "lng":151.201196
+         },
+         "name":"Australian Cruise Group",
+         "types":[  
+            "travel_agency",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ]
+      },
+      {  
+        ...
+      }
+   ]
+}
+```
 
 To sum up, that's the initial version of the library so far, you can access WAPIQ through a CLI, load your configurations through `*.wapiq` files, or execute and query through Golang using the WAPIQ library.
 
