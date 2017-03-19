@@ -3,3 +3,10 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.19"
+deploy:
+  steps:
+    - duleorlovic/ftp-deploy:
+      destination: $FTP_DESTINATION
+      username: $FTP_USERNAME
+      password: $FTP_PASSWORD
+      subfolder: public
