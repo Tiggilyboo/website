@@ -5,4 +5,5 @@ RewriteEngine on
 RewriteCond %{REQUEST_URI} !^/public
 RewriteRule ^(.*)$ /public/$1 [L]
 RewriteRule ^/blog(.*)$ /blog/$1 [L]
-
+RewriteRule ^/music(.*)$ /music/$1 [L]
+RewriteRule ^/papers(.*)$ /papers/$1 [L]

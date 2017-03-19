@@ -64,7 +64,6 @@ a {
   padding-left: 30px;
   padding-right: 30px;
 }
-.pagination,
 .pagination-single {
   overflow: auto;
   border-top: 1px solid #eee;
@@ -72,17 +71,41 @@ a {
   margin-top: 90px;
   margin-bottom: 20px;
 }
-.pagination .prev,
 .pagination-single .prev {
   text-align: left;
   float: left;
   margin-left: 10px;
 }
-.pagination .next,
 .pagination-single .next {
   text-align: right;
   float: right;
   margin-left: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a {
+  position: relative;
+  float: left;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  border: 1px solid #ddd;
+}
+.pagination > li:first-child a {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pagination > li:last-child a {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 article h1 {
   border-bottom: 2px solid #ddd;

@@ -13,7 +13,7 @@
 
   <main id="list" role="main">
     <div class="article-header light-gray"><h1>{{ .Title }}</h1></div>
-    {{ range .Data.Pages }}
+    {{ range (.Paginator 10).Pages }}
     <div class="summary">
       <h2>
         <a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }} - Draft{{end}}</a>
@@ -39,6 +39,8 @@
       </div>
     </div>
     {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
   </main>
 
 {{ partial "footer.html" . }}
