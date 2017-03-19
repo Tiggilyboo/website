@@ -1,0 +1,8 @@
+box: debian
+build:
+  steps:
+    - install-packages:
+      packages: git
+    - arjen/hugo-build@1.15.1
+      flags: --buildDrafts=true
+      
