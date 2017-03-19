@@ -1,5 +1,5 @@
-box: debian
+box: golang:latest
 build:
   steps:
     - arjen/hugo-build:
-      version: "HEAD"
+        version: "0.19"
