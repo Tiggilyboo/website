@@ -3,6 +3,7 @@ build:
   steps:
     - install-packages:
       packages: git
-    - arjen/hugo-build@1.15.1
+    - arjen/hugo-build:
+      version: "HEAD"
       flags: --buildDrafts=true
       
