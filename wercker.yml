@@ -1,9 +1,5 @@
 box: debian
 build:
   steps:
-    - install-packages:
-      packages: git
     - arjen/hugo-build:
       version: "HEAD"
-      flags: --buildDrafts=true
-      
