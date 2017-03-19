@@ -1,7 +1,7 @@
 +++
 date = "2017-02-25T22:48:15+13:00"
 title = "WAPIQ: Web API Query Language"
-description = "Introduction to a library I've written recently in golang. Explains what the project's all about, why I wrote it, and how to use it!"
+description = "Introduction to a library I've written in golang. Explains what the project's all about, why I wrote it, and how to use it!"
 draft = false
 tags = ["Go", "API", "WAPIQ", "Parser"]
 topics = ["Blog"]
@@ -12,13 +12,13 @@ extralang=true
 ### <a href="https://github.com/Tiggilyboo/wapiq"><span class="fa fa-github"></span> Open Sourced On Github</a>
 
 ### Introduction
-After working on several project involving frequent web API response parsing and request assembling in many different front and back ends, you could say I've had enough of it... So I wrote a library in Golang which attempts to shorten the amount of time to map arbitrary JSON responses and setting up API request behaviours.
+After working on several project involving frequent web API interactions, including: response parsing and request assembling, you could say I've had enough of it... So I wrote a library in Golang which attempts to shorten the amount of time to map arbitrary JSON responses and setting up API request behaviours.
 
 #### What does it look like?
-I went for something of a hybrid between a query language like SQL, and that of a configuration or declarative format like JSON. This allows scoping dynamic naming without taking up too much space. We want something succinct enough, reusable, and easily maintainable if the API's response changes in the future.
+I went for something of a hybrid between a query language like SQL, and that of a configuration or declarative format like JSON. This allows scoping dynamic naming without taking up too much space: we want something succinct enough, reusable, and easily maintainable if the API's response changes in the future.
 
 ### Setup
-WAPIQ consists of several types of commands:
+WAPIQ consists of several types of command keywords:
 
 * `API` configures API endpoints, configured once before running queries off of.
 * `GET` or `POST` configures HTTP requests from an API, specify query parameters, head, body, relative path and all that good stuff.
@@ -27,7 +27,7 @@ WAPIQ consists of several types of commands:
 
 ### Usage By Example
 
-Below goes through a quick Google Places API example, more examples can be found in the [GitHub repository](http://github.com/Tiggilyboo/wapiq).
+Below goes through a quick Google Places API example, more examples can be found in the [GitHub repository](https://github.com/Tiggilyboo/wapiq/tree/master/examples).
 
 
 #### Configuration
@@ -160,7 +160,21 @@ To sum up, that's the initial version of the library so far, you can access WAPI
 
 #### Go Wrapper
 ```go
+package main
 import "github.com/Tiggilyboo/wapiq"
+
+func main(){
+  w := &wapiq.WAPIQ{}
+  w = w.New()
+
+  w.Load("../examples/GooglePlaces.wapiq", false)
+
+  // r is a map[string]interface{} and can be casted directly into GoLang models
+  r := w.Query("/Search FOR Places;")
+
+  // Alternatively, output into JSON, which could be serialized into another interface/language if needed
+  fmt.Println(r.JSON())
+}
 ```
 
 That's all for now, thanks for reading!
