@@ -52,7 +52,7 @@ fn main(){
 }
 ```
 
-*** [parser/lib.rs](https://github.com/Tiggilyboo/Backtick/blob/master/src/parser.rs) ***
+***[parser/lib.rs](https://github.com/Tiggilyboo/Backtick/blob/master/src/parser.rs)***
 
 ``` rust
 use nom::{IResult, digit, alphanumeric, multispace, not_line_ending};
@@ -160,7 +160,7 @@ So to go further ahead we need to explain what we want to capture first, in this
 
 So, now that we've defined a function, let's capture the macro for it:
 
-``` rust
+```rust
 named!(expression<Token>,
     alt!(blank | comment | label | address | multiplier | brackets |
         operator | condition | execute | set)
