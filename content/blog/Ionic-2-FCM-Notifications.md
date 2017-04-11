@@ -11,11 +11,11 @@ comments=true
 I don't know man, you clicked this link, you tell me...
 
 ### Ionic?
-If you are unfamiliar with the [Ionic framework](http://ionicframework.com/docs/v2/), I'd start by checking out some of the docs and features before going through this. Essentially we will be using this framework to display content on a mobile platform (Android, iOS, WP), and be sending native notifications to the phone via [Firebase](http://) (A Google service for messaging, authentication, and a bunch of others).
+If you are unfamiliar with the [Ionic framework](http://ionicframework.com/docs/v2/), I'd start by checking out some of the docs and features before going through this. Essentially we will be using this framework to display content on a mobile platform (Android, iOS, WP), and be sending native notifications to the device via [Firebase](http://) (A Google service for messaging, authentication, and a bunch of others).
 
-Without going into the nitty gritty details, Ionic uses [Cordova](https://cordova.apache.org/) (supported by ye ole' Apache) to interface with the phone's various functions. There are other frameworks, such as [PhoneGap](http://phonegap.com/) which is quite popular as well. This tutorial uses a Cordova plugin called [FCMPlugin](https://www.npmjs.com/package/cordova-plugin-fcm) to communicate with Firebase which uses GCM.
+Without going into the nitty gritty details, Ionic uses [Cordova](https://cordova.apache.org/) (supported by ye ole' Apache) to interface with the phone's various functions. There are other frameworks, such as [PhoneGap](http://phonegap.com/) which are quite popular as well. This tutorial uses a Cordova plugin called [FCMPlugin](https://www.npmjs.com/package/cordova-plugin-fcm) to communicate with Firebase which uses GCM.
 
-Alternatively, Ionic offers various services which they call their [cloud platform](http://ionic.io/), one of these services is also notifications, however their are some costs associated with heavy use of these features. In this guide we will be setting up firebases messaging only.
+Alternatively, Ionic offers various services which they call their [cloud platform](http://ionic.io/), one of these services is notifications, however there are some costs associated with heavy use of these features. In this guide we will be setting up firebases messaging only.
 
 So let's set Ionic Up, you will need the following:
 
@@ -63,10 +63,10 @@ this.platform.ready().then(() => {
 
     FCMPlugin.onNotification(function(d){
       if(d.wasTapped){  
-        // Background receival (Even if app is closed),
+        // Background recieval (Even if app is closed),
         //   bring up the message in UI
       } else {
-        // Foreground receival, update UI or what have you...
+        // Foreground recieval, update UI or what have you...
       }
     }, function(msg){
       // No problemo, registered callback
