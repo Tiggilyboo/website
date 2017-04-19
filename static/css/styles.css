@@ -147,6 +147,7 @@ article img {
   margin: 0 auto;
   text-align: center;
   display: inline-block;
+  max-width: 100%;
 }
 .article-header {
   border-left: 4px solid #29abe2;
