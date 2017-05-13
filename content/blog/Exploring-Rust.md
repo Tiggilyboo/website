@@ -57,9 +57,9 @@ $ rustc --explain EXXXX
 ```
 Alternatively, the official [webified version](https://doc.rust-lang.org/error-index.html).
 
-Happy rusting! Check out my other [rust articles](http://simonwillshire.com/public/tags/rust/)!
+Happy rusting! Check out my other [rust articles](http://simonwillshire.com/public/tags/rust/)
 
 ### Further Reading
 
 * [Official Rust Documentation: Getting Started](http://doc.rust-lang.org/book/getting-started.html)
-* [Rust Wiki](https://en.wikipedia.org/wiki/Rust_(programming_language)
+* [Rust Wiki](https://en.wikipedia.org/wiki/Rust_(programming_language))

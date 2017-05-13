@@ -9,6 +9,7 @@ paginate = 10
 author = "Simon Willshire"
 publishdir = "public"
 disqusShortname = "simonwillshire"
+disablePathToLower = true
 
 [taxonomies]
 tag = "tags"
