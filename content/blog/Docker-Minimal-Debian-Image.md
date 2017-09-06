@@ -25,9 +25,10 @@ $ sudo debootstrap stable .
 ```
 
 Twiddle your thumbs, brew some tea, as this pulls down the debian distro...
-Once it's finished, we need to import this into a docker image. Docker provides the `import` command for this, which extracts tar's. Let's tar and import:
 
 ## Dockerize
+
+Once it's finished, we need to import this into a docker image. Docker provides the `import` command for this, which extracts tar's. Let's tar and import:
 
 ```sh
 $ tar -cxvf base.tar
@@ -52,3 +53,18 @@ $ sudo docker export <your_docker_container_hash> | sudo docker import - base:ra
 For further customisation, check out this article, which goes through some [more in depth cleaning of debian](https://wiki.debian.org/ReduceDebian).
 
 That's it! Now you can build on top of a minimal debian image, happy Docker-ing!
+
+Sample Dockerfile image:
+
+```dockerfile
+FROM base:raw
+LABEL description="Base Debian Image"
+MAINTAINER Simon Willshire <me@simonwillshire.com>
+CMD ["/bin/bash"]
+```
+
+```sh
+$ sudo docker build . -t base:latest
+```
+
+Tada!
