@@ -11,6 +11,21 @@ comments=true
 ## Docker
 This guide assumes you know the basics to docker and assumes it has been installed. This guide will be using a debian variant host environment.
 
+## TL;DR
+If you can't be bothered, you can grab my prebuilt 57MB base image by using:
+
+```sh
+$ docker pull tiggilyboo/base
+```
+
+alternatively use it by creating a dockerfile:
+
+```dockerfile
+FROM tiggilyboo/base
+RUN <some bash commands>
+CMD ["/bin/bash"]
+```
+
 ## Why?
 So, no matter what you are hosting on a docker container, a typical image can include all sorts of unneccisary packages - paired with the fact that docker provides a unique overlay file system which is additive, there is no reason to include these packages. This guide will show you how to create your own customized (and roughly 57MB) version of stable debian. You can then extend the image with various containers and go about your various docker-ing...
 
@@ -57,7 +72,7 @@ That's it! Now you can build on top of a minimal debian image, happy Docker-ing!
 Sample Dockerfile image:
 
 ```dockerfile
-FROM base:raw
+FROM tiggilyboo/base
 LABEL description="Base Debian Image"
 MAINTAINER Simon Willshire <me@simonwillshire.com>
 CMD ["/bin/bash"]
