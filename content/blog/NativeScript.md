@@ -39,6 +39,13 @@ $ tns create mobile
 $ cd mobile
 ```
 
+Regarding the docker run arguments: If you want to connect a phone/tablet device, and run the application on it - you can use:
+```sh
+...
+$docker run --rm -v $HOME/nsapp:/src --name nsapp --device=/dev/bus/usb:/dev/bus/usb:rwm -it tiggilyboo/nativescript
+...
+```
+
 You will be presented with a couple little nativescript nags, input Y/n as you see fit and you will have our new mobile application called `mobile` set up!
 
 For the purpose of this guide, we will only be setting up the application to compile to Android - to do this, we configure our app using:
