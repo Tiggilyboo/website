@@ -253,63 +253,6 @@ code.hljs {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
-@media (max-width : 480px){
-  .brand {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 0 auto;
-  }
-  .social {
-    float: none;
-    text-align: center;
-    padding-top: 5px;
-  }
-  .social .fa {
-    margin-left: auto;
-  }
-  .panel a {
-    margin: auto 5%;
-  }
-  .panel-list {
-    text-align:center;
-  }
-  .panel-list a {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  .timeline {
-    margin-left: 10px;
-  }
-  .timeline-item {
-    margin-right: 0;
-  }
-  .timeline-item h2,
-  .timeline-item h3,
-  .timeline-item h4,
-  .content-gallery-item h2,
-  .content-gallery-item h3,
-  .content-gallery-item h4 {
-    display: inline-block;
-  }
-  img.timeline-image,
-  .content-gallery-item img {
-    max-width: 80%;
-  }
-  img.timeline-image {
-    position: absolute;
-    width: auto;
-    left: 60%;
-    margin-top: 20px;
-    height: 40px;
-  }
-  .footer {
-    text-align: center;
-  }
-  code.hljs {
-    overflow: auto;
-  }
-}
 .timeline-item .extra-info {
   opacity: 0.5;
   max-height: 5px;
@@ -361,4 +304,71 @@ img.timeline-image {
   opacity: 0.4;
   left: -100px;
 }
+@media (max-width : 480px){
+  .brand {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .social {
+    float: none;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .social .fa {
+    margin-left: auto;
+  }
+  .panel a {
+    margin: auto 5%;
+  }
+  .panel-list {
+    text-align:center;
+  }
+  .panel-list a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .timeline {
+    margin-left: 10px;
+  }
+  .timeline-item {
+    margin-right: 0;
+  }
+  .timeline-item h2,
+  .timeline-item h3,
+  .timeline-item h4,
+  .content-gallery-item h2,
+  .content-gallery-item h3,
+  .content-gallery-item h4 {
+    display: inline-block;
+  }
+  img.timeline-image,
+  .content-gallery-item img {
+    max-width: 80%;
+  }
+  .timeline-item h4 {
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    float: left;
+  }
+  .timeline-item img.timeline-image,
+  .timeline-item:not(:hover) img.timeline-image {
+    display: none; 
+  }
+  .footer {
+    text-align: center;
+  }
+  code.hljs {
+    overflow: auto;
+  }
+  .timeline-item .extra-info {
+    display: block;
+    max-height: 150px;
+    transform: scaleY(1); 
+    opacity: 1;
+  }
+}
+
 
