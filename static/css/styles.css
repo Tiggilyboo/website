@@ -304,6 +304,16 @@ img.timeline-image {
   opacity: 0.4;
   left: -100px;
 }
+@media print {
+  .timeline-item .extra-info {
+    transform: scaleY(1);
+    max-height: 150px;
+  }
+  .timeline-item img.timeline-image {
+    opacity: 1;
+    width: auto;
+  }
+}
 @media (max-width : 480px){
   .brand {
     display: block;
