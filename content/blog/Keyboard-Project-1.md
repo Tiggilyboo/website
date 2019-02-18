@@ -24,11 +24,10 @@ This is all well and good, but wait this thing has to sit inside a planck hi-pro
 
 I tried removing them with a soldering iron, even with some desoldering braid these things were stubborn, and they were not coming out easily. So with a defeated feeling, I took some side cutters to the board...
 
-![NanoPi M4: One port down](https://imgur.com/1vMmkmn)
-
+![NanoPi M4: One port down](https://imgur.com/1vMmkmn.jpg)
 One port down!
 
-![NanoPi M4: Low profile](https://imgur.com/Q093I99)
+![NanoPi M4: Low profile](https://imgur.com/Q093I99.jpg)
 
 Oh wait, what that worked? Yes.
 
