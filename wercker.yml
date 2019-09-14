@@ -3,6 +3,7 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.49.2"
+        config: "config/config.toml"
 deploy:
   steps:
     - duleorlovic/ftp-deploy:
