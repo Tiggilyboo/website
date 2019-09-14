@@ -5,6 +5,7 @@ description = "What happens when you mix software debugging processes and hardwa
 tags = ["Linux","Kernel","C","Planck","Keyboards","ARM"]
 topics = ["Blog", "Hardware"]
 comments=true
+code=true
 +++
 
 ## Idea

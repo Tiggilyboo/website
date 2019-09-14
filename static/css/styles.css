@@ -1,7 +1,7 @@
 body {
   color: #777;
-  font-family: "Raleway", Helvetical, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 1em;
   line-height: 1.6em;
   letter-spacing: 0.5px;
 }
@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 .subtitle {
-  font-size: 17px;
+  font-size: 1.1em;
   color: #bbb;
   margin-left: 15px;
   vertical-align: middle;
@@ -39,7 +39,7 @@ a {
   margin-right: 10px;
 }
 .brand {
-  font-size: 27px;
+  font-size: 2em;
   color: #222;
   margin: 0.2em 0;
 }
@@ -116,14 +116,15 @@ article p {
 }
 article code {
   color: #333;
-  background-color: #eee;
+  background-color: #ccc;
   padding: 0 3px;
   margin: 0 3px;
-  border: 1px solid #eee;
-  font-family: consolas, "Courier New", monospace;
+  border: 1px solid #ccc;
+  font-family: "Hack", consolas, monospace;
+  font-size: 0.9em;
 }
 article pre code {
-  font-family: consolas, "Courier New", monospace;
+  font-family: "Hack", consolas, monospace;
 }
 article blockquote {
   margin: 25px 0;
@@ -235,7 +236,7 @@ img.timeline-image {
 .content-gallery-item h2,
 .content-gallery-item h3,
 .content-gallery-item h4 {
-  font-size: 20px;
+  font-size: 1.4em;
 }
 .social {
   float: right;
@@ -245,7 +246,7 @@ img.timeline-image {
 }
 .social .fa {
   margin-left: 16px;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 code.hljs {
   overflow-x: auto;

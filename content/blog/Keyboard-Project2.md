@@ -1,10 +1,11 @@
 +++
-date = "2019-09-14T21:49:00+13:00"
+date = "2019-09-13T21:49:00+13:00"
 title = "Handwired Keyboard Project: Part 2"
 description = "The Linux Kernel, Device layers, i2c drivers, and kernel module"
 tags = ["Linux","Kernel","C","Planck","Keyboards","ARM"]
 topics = ["Blog", "Hardware"]
 comments=true
+code=true
 +++
 
 ## Intro
@@ -20,25 +21,26 @@ I've come into this project with a little knowledge of kernel module compilation
 As per my stringent requirements, I want some fast interrupt based kernel level hardware interaction, I could have done this in python and flailed a stray cpu in a loop polling the device, but that's just poor form. In order to achieve this, several pieces need to come together: 
 
 A kernel module containing
-  1. Device driver to access gpio and interrupts when a state has changed (button presses)
-  2. Device driver to access i2c so that enough interruptible inputs can coexist (Current PCB does not support 16 GPIOs simultaneously).
-  3. Device driver to access HID (that is Human Interface Device) that represents a keyboard so that I can plug in the keyboard to external USB ports providing power and peripheral to make input device.
-  4. Device driver to access internal input events (Simple input device) for when I dont want the keyboard to act as a preipheral.
+
+  1. Device driver to access **gpio** and interrupts when a state has changed (button presses)
+  2. Device driver to access **i2c** so that enough interruptible inputs can coexist (Current PCB does not support 16 GPIOs simultaneously).
+  3. Device driver to access **USB HID** (that is Human Interface Device) that represents a keyboard so that I can plug in the keyboard to external USB ports providing power and peripheral to make input device.
+  4. Device driver to access internal **input** events (Simple input device) for when I dont want the keyboard to act as a preipheral.
 
 ### Device Tree Overlays
 
-Much to my frustration while writing the kernel driver, I could not for the life of me get the i2c device to probe. After some research, I discovered that you need to write an overlay in order to communicate with the hardware that you require for the device. As I've never written or even seen these before, it was a little daunting... Luckily, someone had written support for the MCP23017 for the reaspberry pi, so I was able to adapt it based on the NanoPi's addresses.
+Much to my frustration while writing the kernel driver, I could not for the life of me get the i2c device to probe. After some research, I discovered that you need to write an overlay in order to communicate with the hardware that you require for the device. As I've never written or even seen these before, it was a little daunting... Luckily, someone had written support for the MCP23017 for the raspberry pi, so I was able to adapt it based on the NanoPi's addresses.
 
-```dts
+```
 /dts-v1/;
 
 / {
-	compatible = "rockchip,rk3399";
+  compatible = "rockchip,rk3399";
   
   fragment@0 {
-		target-path = "/i2c@ff120000";
+    target-path = "/i2c@ff120000";
 
-		__overlay__ {
+    __overlay__ {
       status = "okay"; 
     };
   };
@@ -54,10 +56,10 @@ Much to my frustration while writing the kernel driver, I could not for the life
     };
   };
 
-	fragment@2 {
-		target-path = "/i2c@ff120000";
+  fragment@2 {
+    target-path = "/i2c@ff120000";
 
-		__overlay__ {
+    __overlay__ {
       #address-cells = <1>;
       #size-cells = <0>;
 
@@ -74,8 +76,8 @@ Much to my frustration while writing the kernel driver, I could not for the life
 
         status = "okay";
       };
-		};
-	};
+    };
+  };
 };
 ```
 
@@ -105,6 +107,7 @@ So, a button grounds two inputs (one for the X axis, the other for the Y). This 
 The basics, we need write a series of register bytes in order to setup the MCP23017 in the way we want to use it. In my use case, I will be mirroring both banks (A and B), so that if any bank changes the interrupt is fired. The change is from high ie 1 to 0, which is called a falling edge interrupt.
 
 In practice, this means:
+
   - Set MCP23017_IODIRA and B = 0xff ie 1111 1111 (input direction for all)
   - Set MCP23017_GPPUA and B = 0xff so that we use the internal pull up/down resistors so we don't get flappy values
   - Set MCP23017_CONA and B = 0x62
@@ -189,11 +192,12 @@ static int planck_configure_gpio(struct planck_device *device)
   return res;
 }
 ```
-Notice `IRQF_TRIGGER_RISING`, this is not to be confused with the state of the i2c inputs, the MCP23017 will raise the input from low to high. Whereas internally, the MCP23017 inputs are triggering the interrupt from 0 to 1 and 1 to 0 (both ways).
+
+**Notice** `IRQF_TRIGGER_RISING`, this is not to be confused with the state of the i2c inputs, the MCP23017 will raise the input from low to high. Whereas internally, the MCP23017 inputs are triggering the interrupt from 0 to 1 and 1 to 0 (both ways).
 
 Call this configuration from within your probe event handler. Once complete, you need to set up our marvilous interrupt handler function (aka irq handler)!
 
-We will be introducing a few concepts so that the device does not wait on itself or have race conditions namely through bottom half processing and spin locks. I found some great documentation from IBM [here](https://developer.ibm.com/tutorials/I-tasklets/). 
+We will be introducing a few concepts so that the device does not wait on itself or have race conditions namely through bottom half processing and spin locks. I found some great documentation from IBM [here](https://developer.ibm.com/tutorials/l-tasklets/). 
 
 #### Interrupts, and Bottom half processing
 
@@ -210,7 +214,8 @@ static irq_handler_t planck_gpio_interrupt(unsigned int irq, void *dev_id, struc
   // spin lock so we don't clobber our state if another concurrent interrupt happens while queuing
   spin_lock_irqsave(&device->irq_lock, flags);
   
-  struct planck_i2c_work* work = (struct planck_i2c_work*)kmalloc(sizeof(struct planck_i2c_work), GFP_KERNEL);
+  struct planck_i2c_work* work = 
+    (struct planck_i2c_work*)kmalloc(sizeof(struct planck_i2c_work), GFP_KERNEL);
   INIT_WORK((struct work_struct*)work, planck_work_handler);
   work->device = device;
   queue_work(device->read_wq, (struct work_struct*)work); ret = planck_queue_i2c_work(device);
