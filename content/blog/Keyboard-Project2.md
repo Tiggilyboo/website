@@ -1,7 +1,7 @@
 +++
 date = "2019-09-14T21:49:00+13:00"
 title = "Handwired Keyboard Project: Part 2"
-description = "The Linux Kernel, Device layers, i2c drivers, and kernel modules"
+description = "The Linux Kernel, Device layers, i2c drivers, and kernel module"
 tags = ["Linux","Kernel","C","Planck","Keyboards","ARM"]
 topics = ["Blog", "Hardware"]
 comments=true
@@ -426,5 +426,6 @@ In the next article, I will be assembling the input matrix, implementing multipl
 After that, we need to define a switch to toggle between internal input handling and external USB HID handling.
 
 The latest full version of the full source can be found at my github [here](https://github.com/tiggilyboo/planck)
+
 
 

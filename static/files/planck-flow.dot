@@ -1,0 +1,25 @@
+ 
+digraph {
+    button [shape=rect]
+    Xn -> button
+    Yn -> button
+    GND -> button
+
+    i2c [shape=rect]
+    { Xn Yn GND interrupt } -> i2c
+
+    gpio32 [shape=rect]
+    interrupt -> gpio32
+
+    kernel [shape=rect label="kernel module"]
+    input_device [shape=rect]
+    usb_hid_device [shape=rect]
+    i2c_device -> i2c
+    gpio32 -> gpio_device
+
+    external [shape=diamond label="Is external HID?"]
+    { i2c_device gpio_device } -> kernel
+    kernel -> external
+    external -> yes -> usb_hid_device
+    external -> no -> input_device
+}
