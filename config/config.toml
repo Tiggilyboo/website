@@ -1,7 +1,6 @@
 baseurl = "http://simonwillshire.com/"
 languageCode = "en-us"
 title = "Simon Willshire"
-ignoreFiles = [ "\\.hugo" ]
 copyright = ""
 relativeURLs = true
 canonifyURLs = true
@@ -9,11 +8,3 @@ paginate = 10
 author = "Simon Willshire"
 publishdir = "public"
 disqusShortname = "simonwillshire"
-disablePathToLower = false
-
-[taxonomies]
-tag = "tags"
-topic = "topics"
-category = "categories"
-blog = "blog"
-music = "music"

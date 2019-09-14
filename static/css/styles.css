@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 .subtitle {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #bbb;
   margin-left: 15px;
   vertical-align: middle;
@@ -39,7 +39,7 @@ a {
   margin-right: 10px;
 }
 .brand {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #222;
   margin: 0.2em 0;
 }
@@ -236,7 +236,7 @@ img.timeline-image {
 .content-gallery-item h2,
 .content-gallery-item h3,
 .content-gallery-item h4 {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .social {
   float: right;
@@ -381,5 +381,4 @@ img.timeline-image {
     opacity: 1;
   }
 }
-
 
