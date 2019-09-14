@@ -14,11 +14,11 @@ comments=true
 
 ## The SBC
 
-![NanoPi M4](http://wiki.friendlyarm.com/wiki/index.php/File:NanoPi_M4-01B.jpg)
+![NanoPi M4](http://wiki.friendlyarm.com/wiki/images/d/dd/NanoPi_M4-01B.jpg)
 
 I've chosen the [NanoPi M4](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_M4) for this task, which is certainly overkill, but I'd like to do some heavier tasks on the board, play 4K out, headphones out, and have potentially an SSD installed. 
 
-![Planck Hi-pro case](https://static1.squarespace.com/static/5701bc562eeb810fd9247c88/5701c35bf699bbaade59f4b1/5a329522085229c7f4c9adfc/1525238746595/PLKBOT-HIPRO-BLKMAT-rside.png?format=1500w)
+![Planck Hi-pro case](https://static1.squarespace.com/static/5701bc562eeb810fd9247c88/5701c35bf699bbaade59f4b1/5a329522085229c7f4c9adfc/1525238746595/PLKBOT-HIPRO-BLKMAT-rside.png?format=800w)
 
 This is all well and good, but wait this thing has to sit inside a planck hi-pro case, whith a layer of cherry mx switches sitting above it? Aha, yes... Well we can do without the usb ports and the ethernet port, this brings us down to the pin height on the GPIO as the tallest peice on the board - but wait, how do I get those giant things off the PCB?
 
