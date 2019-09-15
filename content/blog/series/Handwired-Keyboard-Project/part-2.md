@@ -4,6 +4,7 @@ title = "Handwired Keyboard Project: Part 2"
 description = "The Linux Kernel, Device layers, i2c drivers, and kernel module"
 tags = ["Linux","Kernel","C","Planck","Keyboards","ARM"]
 topics = ["Blog", "Hardware"]
+series = ["Handwired Keyboard Project"]
 comments=true
 code=true
 +++

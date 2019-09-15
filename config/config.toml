@@ -8,3 +8,9 @@ paginate = 10
 author = "Simon Willshire"
 publishdir = "public"
 disqusShortname = "simonwillshire"
+
+[taxonomies]
+topic = "topics"
+category = "categories"
+tag = "tags"
+series = "series"

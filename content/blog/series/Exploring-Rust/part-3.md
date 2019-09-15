@@ -4,6 +4,7 @@ title = "Exploring Rust - Part 3: Writing a Programming Language Parser (Nom)"
 description = "Taking a look at writing a programming language parser using Nom"
 tags = ["Programming", "Rust", "Nom"]
 topics = ["Blog", "Programming"]
+series = ["Exploring Rust"]
 comments=true
 extralang=true
 +++

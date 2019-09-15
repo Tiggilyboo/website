@@ -12,7 +12,10 @@
   </script>
 
   <main id="list" role="main">
-    <div class="article-header light-gray"><h1>{{ .Title }}</h1></div>
+    <div class="article-header light-gray">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
     {{ range (.Paginator 10).Pages }}
     <div class="summary">
       <h3>
@@ -33,7 +36,7 @@
         <div class="meta-description">{{ .Description }}</div>
         <div class="tags">
         {{ range .Params.tags }}
-          <a href="/tags/{{ . | lower | urlize }}">{{ . }}</a>&nbsp;
+          <a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
         {{ end }}
         </div>
       </div>

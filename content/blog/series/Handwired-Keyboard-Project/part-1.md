@@ -3,7 +3,8 @@ date = "2019-01-16T18:00:00+13:00"
 title = "Handwired Keyboard Project: Part 1"
 description = "What happens when you mix software debugging processes and hardware..."
 tags = ["Linux","Kernel","C","Planck","Keyboards","ARM"]
-topics = ["Blog", "Hardware"]
+topics = ["Blog"]
+series = ["Handwired Keyboard Project"]
 comments=true
 code=true
 +++

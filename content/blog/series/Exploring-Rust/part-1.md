@@ -3,7 +3,8 @@ date = "2016-05-14T13:06:00-04:00"
 title = "Exploring Rust - Part 1 (Setup: Atom, Racer)"
 description = "Started taking a look at what all the hype was about with Rust!"
 tags = ["Programming", "Rust", "Compiler"]
-topics = ["Blog", "Programming"]
+topics = ["Blog"]
+series = ["Exploring Rust"]
 comments=true
 +++
 

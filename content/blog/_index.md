@@ -1,4 +1,3 @@
 +++
-title="Blog"
-comments=true
+Title = "Blog"
 +++

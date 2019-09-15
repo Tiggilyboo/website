@@ -4,6 +4,7 @@ title = "Exploring Rust - Part 2: Vulkan API"
 description = "Taking a look at implementing Vulkan binding in rust using Vulkano"
 tags = ["Programming", "Rust", "Vulkan"]
 topics = ["Blog", "Programming"]
+series = ["Exploring Rust"]
 comments=true
 +++
 

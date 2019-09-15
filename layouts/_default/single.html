@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-
   {{ if .Params.extralang }}
     {{ partial "code/languages.html" . }}
   {{ end }}
@@ -20,8 +19,17 @@
         </div>
       </div>
     </div>
+    <div class="tags" style="text-align: center">
+      {{ if .Params.series }}
+        This article is part of the series 
+        {{ range .Params.series }}
+          <a href="/series/{{ . | lower | urlize }}">{{ . }}</a></li>
+        {{ end }} 
+      {{ end }} 
+    </div>
+
     <article>
-      {{ .Content }}
+            {{ .Content }}
 
       {{ with .Site.Params.shareThis }}
         <div id="share-this" class="col span_10">
