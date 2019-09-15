@@ -6,12 +6,13 @@
       <h1 id="title">{{ .Title }}</h1>
     </div>
 
-    <ul>
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms }}
-      <li><a href="{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a>{{ len $value }}</li>
+      <h3>
+        <a href="{{ $key | urlize }}">{{ $key }}</a>
+        {{ len $value }}
+      </h3>
     {{ end }}
-    </ul>
   </div>
 </section>
 
