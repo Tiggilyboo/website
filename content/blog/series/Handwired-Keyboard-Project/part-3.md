@@ -20,7 +20,8 @@ Great it's been 3 months, where the heck is my finished keyboard? Let's get up t
 
 ![Switches](https://i.imgur.com/JPAWByX.jpg)
 
-Components I used to assemble the matrix
+Components I used to assemble the matrix:
+
   - 48 Cherry MX Brown switches
   - 48 diodes
   - Planck switch top plate to mount the switches into (Basically an aluminium frame so things don't get floppy)
@@ -43,7 +44,7 @@ Once complete on all pins, reflect on youre one person assembly line and take a 
 
 ### The Rows
 
-![Rows](https://imgur.com/JPAWByX)
+![Rows](https://i.imgur.com/64MpOp6.jpg)
 
 We need a way to either solder (n-1) * (m-1) bits of wire, without going insane. My approach was to use 4 wires which make up the entire row, and strip the insulation bare at each diode arm. Once stripped, wrap the banded side of the diode arm around the exposed wire and solder the joint at the twist.
 
@@ -59,7 +60,7 @@ Using the similar approach as above, maintaining your sanity - we need to solder
 
 Great, now we've got our input matrix, we need to attach our 12 rows and 4 columns to our i2c extender (in my case the MCP23017). I picked up some 16 wire ribbon cable, and fed the components under the columns and between the rows to attach to each row and column. Once complete, pull back and solder each wire to the MCP23017. I used the following mapping in order to match up with my kernel modules expectations.
 
-![Ribbon Routing](https://imgur.com/JPAWByX)
+![Ribbon Routing](https://i.imgur.com/ItMzcM9.jpg)
 
 
 #### MCP23017 Pin Mapping
@@ -177,7 +178,8 @@ Notice how we `goto finished` here instead of sending the HID report, this is so
 
 We are not quite at the final product yet - But as I said in the intro, I've actually written the entire article with this keyboard, which turns out to be not a small feat! 
 
-What's left? 
+#### What's left? 
+
 - Still  would like to revisit the non-layman approach and use interrupts, guage what the performance differences are. Though currently I'm stalling the worker to write each row and read all columns once every Jiffy (Which is roughly equates to ~16ms). But it looks like most response times on keyboards today seem to be around 50ms scan times, so I may have already overkilled it.
 - Put it in a case, this may mean stripping the USB and Ethernet ports to fit.
   - The case still needs to have holes drilled to access the different remaining ports (Audio, HDMI and USB-C)
