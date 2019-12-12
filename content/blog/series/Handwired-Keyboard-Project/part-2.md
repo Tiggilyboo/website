@@ -11,15 +11,15 @@ code=true
 
 ## Intro
 
-As a quick refresher from the first part in the series, I'm making a handwired keyboard which uses an altogether rediculous chinese knockoff 6 core monster. Better yet, there are not enough GPIOs available on the board to handle the input matrix (12x4). Oh, and the case I want to use (from my current keyboard does not have enough vertical headroom to fit it, so I have to manually strip the taller components by hand so it has enough clearance.
+As a quick refresher from the first part in the series, I'm making a handwired keyboard which uses an altogether rediculous chinese knockoff 6 core monster SBC (The RK3399). Better yet, there are not enough GPIOs available on the board to handle the input matrix (12x4). Oh, and the case I want to use (from my current keyboard does not have enough vertical headroom to fit it, so I have to manually strip the taller components by hand so it has enough clearance.
 
-Along my journey, I've fried the entire board (So far only once) by accidentally shorting some of the 40-pin header to test my kernel module - By and large, the nonchalance of a primarily web based software developer... So, the second board has arrived and I've made enough progress to write another article. 
+Along my journey, I've fried an entire board (So far only once) by accidentally shorting some of the 40-pin header to test my kernel module - By and large, making mistakes with the nonchalance of a primarily web based software developer... So, the second board has arrived and I've made enough progress to write another article. 
 
 ## The Linux Kernel
 
 I've come into this project with a little knowledge of kernel module compilation, but have never had to write anything quite as drastic at this - let's just say it has taken much longer than expected, but lot's has been learned...
 
-As per my stringent requirements, I want some fast interrupt based kernel level hardware interaction, I could have done this in python and flailed a stray cpu in a loop polling the device, but that's just poor form. In order to achieve this, several pieces need to come together: 
+As per my strict self-imposed requirements, I want some fast interrupt based kernel level hardware interaction, I could have done this in python and flailed a stray cpu in a loop polling the device, but that's just poor form. In order to achieve this, several pieces need to come together: 
 
 A kernel module containing
 
@@ -30,7 +30,7 @@ A kernel module containing
 
 ### Device Tree Overlays
 
-Much to my frustration while writing the kernel driver, I could not for the life of me get the i2c device to probe. After some research, I discovered that you need to write an overlay in order to communicate with the hardware that you require for the device. As I've never written or even seen these before, it was a little daunting... Luckily, someone had written support for the MCP23017 for the raspberry pi, so I was able to adapt it based on the NanoPi's addresses.
+Much to my frustration while writing the kernel driver, I could not for the life of me get the i2c device to probe. After some research, I discovered that you need to write an overlay in order to communicate with the hardware that you require for the device. As I've never written or even seen these before, it was a little daunting... Luckily, someone had written support for the MCP23017 for the raspberry pi, so I was able to adapt it based on the NanoPi's addresses by decompiling the Nanopi's dtbo and checking the aliases exposed to the system).
 
 ```
 /dts-v1/;
