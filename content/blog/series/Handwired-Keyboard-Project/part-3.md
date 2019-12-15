@@ -22,11 +22,11 @@ Great it's been 3 months, where the heck is my finished keyboard? Let's get up t
 
 Components I used to assemble the matrix:
 
-  - 48 Cherry MX Brown switches
-  - 48 diodes
-  - Planck switch top plate to mount the switches into (Basically an aluminium frame so things don't get floppy)
-  - A bunch of wire, and ribbon cable to the MCP23017 i2c board.
-  - Lots of patience
+1. 48 Cherry MX Brown switches
+2. 48 diodes
+3. Planck switch top plate to mount the switches into (Basically an aluminium frame so things don't get floppy)
+4. A bunch of wire, and ribbon cable to the MCP23017 i2c board.
+5. Lots of patience
 
 Before you get started, read some background on how a input matrix works - There are tonnes of resources online, which is possibly why you ended up here. Heres are some that I used to figure out the wiring:
 
@@ -38,7 +38,7 @@ Before you get started, read some background on how a input matrix works - There
 
 ![Diodes](https://i.imgur.com/9500T3e.jpg)
 
-Pre-bend the non-banded side of all diodese on a right angle surface (If they come in a paper tied set). Use a tiny screw driver and lots of patiece to bend a small loop on each bent end. These loops will be dropped onto the bottom right pin and solderded (As pictured). bottom right pin and solderded (As pictured above).  
+Pre-bend the non-banded side of all diodese on a right angle surface (If they come in a paper tied set). Use a tiny screw driver and lots of determination to bend a small loop on each bent end. These loops will be dropped onto the bottom right pin and solderded (As pictured). bottom right pin and solderded (As pictured above).  
 
 Once complete on all pins, reflect on youre one person assembly line and take a break...
 
@@ -46,7 +46,7 @@ Once complete on all pins, reflect on youre one person assembly line and take a 
 
 ![Rows](https://i.imgur.com/64MpOp6.jpg)
 
-We need a way to either solder (n-1) * (m-1) bits of wire, without going insane. My approach was to use 4 wires which make up the entire row, and strip the insulation bare at each diode arm. Once stripped, wrap the banded side of the diode arm around the exposed wire and solder the joint at the twist.
+We need a way to either solder (n-1) * (m-1) bits of wire without going insane. My approach was to use 4 wires which make up the entire row, and strip the insulation bare at each diode arm. Once stripped, wrap the banded side of the diode arm around the exposed wire and solder the joint at the twist.
 
 ### The columns
 
@@ -60,10 +60,12 @@ Using the similar approach as above, maintaining your sanity - we need to solder
 
 Great, now we've got our input matrix, we need to attach our 12 rows and 4 columns to our i2c extender (in my case the MCP23017). I picked up some 16 wire ribbon cable, and fed the components under the columns and between the rows to attach to each row and column. Once complete, pull back and solder each wire to the MCP23017. I used the following mapping in order to match up with my kernel modules expectations.
 
-![Ribbon Routing](https://i.imgur.com/ItMzcM9.jpg)
+![Ribbon Routing](https://i.imgur.com/ltMzcM9.jpg)
 
 
 #### MCP23017 Pin Mapping
+
+This is my pin mapping used for the i2c board, this is based on my implementation in my kernel module driver. It could be whatever you like...
 
 ```
 C uint16_t: YYYY XXXX XXXX XXXX
@@ -84,18 +86,19 @@ PB3: Column, X = 1
 PB4: Row, Y = 1
 PB5: Row, Y = 2
 PB6: Row, Y = 3
-PB7: Row, Y = 4;
+PB7: Row, Y = 4
 ```
-## Kernel Module Updates 
 
+## Kernel Module Updates 
 
 ### Complications and Assumptions
 
-In Part 2, we went about setting up an interrupt which was triggering a workqueue job. This job then read the i2c state, we then compare the last state with the current state, the difference gives us our 0 => 1 pressed and 1 => 0 released states, register those inputs based on where it lay in the keymapping and away you go riding into the sunset! Except no, assumptions were made...
+In Part 2, we went about setting up an interrupt which was triggering a workqueue job. This job then read the i2c state, compares the last state with the current state. The difference of these two states gives us our 0 => 1 pressed and 1 => 0 released states, register those inputs based on where it lay in the keymapping and away you go riding into the sunset! Except no, some assumptions were made...
 
 The way the key matrix works, you need to lower a single i2c row, then inspect if any columns change. However, once the row changes, any previous column states are wiped out (Something that I did not realise). So being stubborn and not wanting to write a m * n 2 dimensional loop, I set about constructing something awefully complicated...
 
-Workflow:
+**Workflow:**
+
   1. Have a write work queue (write_wq), which purely pulls the row down to ground, giving us a 0 state.
     - The next row is then queued, we do a wee modulus division and rotate between rows 1-4 for each execution, this gives us row polling.
   2. Have a read work queue (read_wq), which is queued when a column interrupt happens
@@ -111,22 +114,21 @@ Cool, so we have row states, and we only interrupt on columns... Wait all this i
 git checkout -b laymans
 ```
 
-Street Pseudo-code:
-```
-Hey man, I just want to loop all rows:
-  Ok, now Write my row to i2c
-  Cool, what do my columns look like?
-    (Press?)    Ah, this column has changed, its now low
-    (Release?)  Oh, but this column has changed its back to high again.
-```
+**Street Pseudo-code:**
+
+> Hey man, I just want to loop all rows:
+> Ok, now Write my row to i2c
+> Cool, what do my columns look like?
+>    (Press?)    Ah, this column has changed, its now low
+>    (Release?)  Oh, but this column has changed its back to high again.
 
 And that's basically it. Theres some funky layer handling and mode changing in there, but in essense I wrote this in one afternoon and it was working! If my pseudo-code is too streety for you, check out the actual kernel module at the [planck repo](https://github.com/tiggilyboo/planck).
 
 ### External Mode
 
-This keyboard is good and all, but the biggest and coolest feature is that its running on a SBC which is running a full linux operating system. But what about using it as a normal keyboard? To do this we need to use something in the linux kernel called a usb gadget device, and with this device register a keyboard and send reports to it.
+This keyboard is good and all, but the biggest and coolest feature is that its running on a SBC which is running a full linux operating system. But what about using it as a normal keyboard? To do this we need to use something in the linux kernel called a [usb gadget device](https://kernel.org/doc/html/v4.13/driver-api/usb/gadget.html), and with this device register a keyboard and send reports to it.
 
-This portion was probably the most difficut, because there are not too many resources online which describe how to write a HID keyboard driver. Luckily, with the popularity of the Raspberry Pi, and using it as a gadget device for sharing serial tty, files or networking, I had a starting point.
+This portion was probably the most difficult, because there are not too many resources online which describe how to write a HID keyboard driver with both internal and external drivers rolled into one. Luckily, with the popularity of the Raspberry Pi, and using it as a gadget device for sharing serial tty, files or networking, I had a starting point.
 
 - Define a platform device which describes our usb functions, in this case our HID report data identifying it as a keyboard!
 - Define a platform driver and usb composite driver which probe, bind and remove when a device is connected and disconnected.
@@ -134,9 +136,11 @@ This portion was probably the most difficut, because there are not too many reso
 - When we bind the usb device, configure if to add our usb function
 - When we want to process an external input (a key was pressed for ex.), we write to our HID gadget that is bound with our report
 
+For the current driver code, check out the planck_hid.h file in the [planck github repo](https://github.com/tiggilyboo/planck)
+
 ### HID Input Reports
 
-Theres a USB spec which describes the input reports [here](https://www.usb.org/sites/default/files/documents/hid1_11.pdf).
+Once you've got a device up and running, in order to communicate to the host device that an input event has happened, you need to send input reports. Theres a USB spec which describes the input reports [here](https://www.usb.org/sites/default/files/documents/hid1_11.pdf).
 
 But I'll give a quick little overview: We can only send a maximum of 8 bytes per report, each report can send key modifiers (Any combination of all Controls, Shifts, Alts, Metas), and 6 other report values.
 
