@@ -7,7 +7,6 @@ topics = ["Blog"]
 series = ["Camper Power Monitoring"]
 comments=true
 code=true
-draft=true
 +++
 
 # What?
@@ -160,3 +159,4 @@ We can further store these rolling averages every hour (or a predetermined lengt
 - Show some screenshots of the working unit, showcase some of the UI, and interface choices.
 
 So with that scatter plot of a blog entry, I leave you with a topgear sounding bombshell...
+
