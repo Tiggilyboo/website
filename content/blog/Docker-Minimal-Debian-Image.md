@@ -46,7 +46,7 @@ Twiddle your thumbs, brew some tea, as this pulls down the debian distro...
 Once it's finished, we need to import this into a docker image. Docker provides the `import` command for this, which extracts tar's. Let's tar and import:
 
 ```sh
-$ tar -cxvf base.tar
+$ tar czvf base.tar .
 $ docker import base.tar base:raw
 ```
 
