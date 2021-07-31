@@ -32,8 +32,6 @@ This project will not entirely be useful to a lot of people as I am integrating 
 
 (RVR40) Renogy Rover 40A: Uses RS-232 over RJ12 (the 6 pin cable, not 4) over Modbus.
 
-- Does what it says on the label, connect your solar panel(s) to it, and to your battery (ensure you use high enough guage wiring, this article is 
-
 ### Altenator
 
 (DCC50S) Renogy DC-DC Battery Charger: Uses RS-485 over RJ45
@@ -88,8 +86,15 @@ And the display is using the following pinout in ``display/display-ws-eink.h``:
 ### Communication Pinouts
 
 RJ45 Pinouts for DCC50S and LFP100S:
+(Pin numbers starting left to right, with clip facing upwards)
 
-![rj45 pinout](https://www.t6forum.com/attachments/rj45-pinout-png.72290/)
+1: +5v
+2: A
+3: B
+4: GND
+5-8: Not used
+
+Also of note, since we are using a half duplex (either transmitting or receiving but not both) serial communication method, we are capable of wiring the A, B, GND RJ45 connectors together to interact with the same TTY communication board. In this case I have opted for a MAX485 based board to do the job, they are easy to find and quite accessible.
 
 ## Method
 
@@ -102,7 +107,7 @@ After scouring the internet for quite some time for each of these devices addres
 - (RVR40) Renogy Rover Solar Charge Controller: [Tinkerer on github](https://github.com/KyleJamesWalker/renogy_rover/blob/master/reference/ROVER%20MODBUS.pdf) 
 - (DCC50S) Renogy DC-DC Battery Charger: [Official documentation](https://support.renogy.com/helpdesk/attachments/35092136259)
 
-However that leads us to the smart lithium batteries (for which this is probably the most important information: what is the stat of charge? Otherwise we would require to install a shunt resistor or hall effect sensor... This device has proven to be imppossible to find, which means we have to reverse engineer it!
+However that leads us to the smart lithium batteries (for which this is probably the most important information: what is the state of charge? Otherwise we would require to install a shunt resistor or hall effect sensor... This device has proven to be imppossible to find, which means we have to reverse engineer it!
 
 ### Great, how do we reverse engineer the mappings?
 
@@ -128,11 +133,35 @@ So [apparently](http://www.simplymodbus.ca/exceptions.htm), Modbus has an except
 
 Fun, so this means we need to try other addresses, but at least we know what the LFP100S unit is operating at! The bad news is that that same RTU frame format allocates 2 bytes, which in unsigned format is a whopping **65,535** registers to check...
 
-Fast forward roughly 18 hours of brute forcing addresses (We check the response is length 5 and that the function response is upper bit high, then check the next address...), and sadly no address seems to work?
+Fast forward roughly a few hours of brute forcing addresses (We check the response is length 5 and that the function response is upper bit high, then check the next address...), and with this I have gleaned the following addresses!
 
-Stumped until another day perhaps...
+- 5000 - 5033
+- 5035 - 5052
+- 5100 - 5141
+- 5200 - 5223
 
-## Polling and Updating
+Here is a sample response from one of my units:
+
+**Request**
+
+Address: 0xf7 (247), function 3 (read registers), address 0x1388 (5000), count 0x21 (33 registers), crc
+
+> f7 03 13 88 00 21 15 ea
+
+**Response**
+
+> f7 03 42 00 04 00 21 00 21 00 21 00 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Fantastic, so what do we do with this information?
+With a bit of guess work and plugging in various devices to discharge the batteries over time and taking more data points, we can figure out at least a few of the registers' meanings.
+
+For instance, since I had a voltmeter handy, I measured the output of the LFP100S bank, in this case 13.4v. Since all the registers are bytes (no float precision), typically this would be stored in 10 or 100 times that value. So, scanning our register responses for `0x86` in hex.
+
+In this case this corresponds with address `5015`. By making several snapshots of the state and filling these into a spreadsheet, I was able to quickly determine the differences between the states. However, I have yet to track down the overall percentage of state of charge... Hopefully with more data, things will become clearer.
+
+## E-Ink Polling and Updating
+
+Now onto a completely different topic... how often do we wish to update the information, and how often will that information be displayed?
 
 Since we are working with an E-ink display, we do not want to update the screen every time we poll for information (Well we can, but you would be looking at mostly flashing black and white pixels more that actual information...) we need to figure out a way to average our results over periods of time.
 
@@ -155,7 +184,7 @@ We can further store these rolling averages every hour (or a predetermined lengt
 
 ## What's next?
 
-- Continue finding where oh where the holding register address blocks are in the LFP100S'.
+- Continue finding where oh where the holding register address blocks are in the LFP100S', specifically the state of charge in percentage or an Amp Hour remaining figure!
 - Show some screenshots of the working unit, showcase some of the UI, and interface choices.
 
 So with that scatter plot of a blog entry, I leave you with a topgear sounding bombshell...
