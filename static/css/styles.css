@@ -160,6 +160,7 @@ article img {
 .summary:not(:last-child){
   border-bottom: 1px solid #eee;
 }
+.exp-tech-info,
 .tags a,
 .tags a:active {
   background-color: #e2e2e2;
@@ -304,6 +305,21 @@ img.timeline-image {
   width: 80px;
   opacity: 0.4;
   left: -100px;
+}
+.exp-tech {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.exp-tech span {
+  margin-right: 30px;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.exp-tech-info {
+  float: right;
+  padding: 3px;
+  font-size: small;
 }
 @media print {
   .timeline-item .extra-info {
