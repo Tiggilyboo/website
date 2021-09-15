@@ -1,7 +1,7 @@
 +++
 date = "2021-07-26T18:38:00+01:00"
 title = "Camper Power Monitoring: Part 1"
-description = ""
+description = "An adventure in low level microcontrollers and modbus protocols"
 tags = ["Camper","E-ink","RS-485","RS-232","Off Grid"]
 topics = ["Blog"]
 series = ["Camper Power Monitoring"]

@@ -1,7 +1,7 @@
 +++
-date = "2021-09-15T09:02:00+01:00"
+date = "2021-09-14T09:28:00+01:00"
 title = "Camper Power Monitoring: Part 2"
-description = ""
+description = "Now with 100% more percentages!"
 tags = ["Camper","E-ink","RS-485","RS-232","Off Grid","Raspberry Pi Pico"]
 topics = ["Blog"]
 series = ["Camper Power Monitoring"]
