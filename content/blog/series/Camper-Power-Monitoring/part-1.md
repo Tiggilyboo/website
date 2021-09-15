@@ -30,13 +30,13 @@ This project will not entirely be useful to a lot of people as I am integrating 
 
 ### Solar 
 
-(RVR40) Renogy Rover 40A: Uses RS-232 over RJ12 (the 6 pin cable, not 4) over Modbus.
+(RVR40) Renogy Rover 40A: Uses RS-232 over RJ12 (the 6 pin cable, not 4).
 
 ### Altenator
 
 (DCC50S) Renogy DC-DC Battery Charger: Uses RS-485 over RJ45
 
-- Connects your engine AGM battery to your leisure batteries. This particular unit also comes with a MPPT Charge controller, however since we have opted for a higher voltage solar panel array, we are not using it.
+- Connects your engine's AGM battery to your leisure batteries. This particular unit also comes with a MPPT Charge controller, however since we have opted for a higher voltage solar panel array, we are not using it.
 
 ### Microcontroller
 
